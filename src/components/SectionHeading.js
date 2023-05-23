@@ -9,10 +9,10 @@ const SectionHeading = ({ text, color="yellow" }) => {
     delay: 100,
   };
   const colorClasses = {
-    blue: "bg-blue-teal",
-    darkBlue: "bg-blue-teal-dark",
+    blue: "bg-blue-ice",
+    darkBlue: "bg-blue-ice-dark",
     darkGray: "bg-gray-800",
-    orange: "bg-orange-mid",
+    orange: "bg-pink-mid",
     yellow: "bg-yellow-mid",
     white: "bg-white",
   };

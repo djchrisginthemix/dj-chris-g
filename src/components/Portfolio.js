@@ -62,7 +62,7 @@ const Portfolio = () => {
                 className="absolute inset-0 flex flex-col items-center justify-center p-6 text-white bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
               >
                 <Reveal triggerOnce {...revealSettings}>
-                  <div className="text-2xl sm:text-3xl font-bold text-blue-teal mb-4">{project.name}</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-blue-ice mb-4">{project.name}</div>
                   <p className="mb-6">{project.description}</p>
                   <a
                     href="/portfolio"

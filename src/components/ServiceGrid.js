@@ -204,7 +204,7 @@ const ServicesGrid = ({ onSubmit }) => {
                 .map((service, index) => (
                   <div
                     key={service.title}
-                    className="service-bubble selected rounded-full bg-orange-mid text-white font-bold text-xs sm:text-sm py-3 px-4 sm:px-6"
+                    className="service-bubble selected rounded-full bg-pink-mid text-white font-bold text-xs sm:text-sm py-3 px-4 sm:px-6"
                     style={{ animationDelay: `${index * 50}ms` }}
                   >
                     {service.title}
@@ -213,7 +213,7 @@ const ServicesGrid = ({ onSubmit }) => {
               </div>
           </div>
           <div id="djcg-services-submit-container" className="col-span-6 sm:col-span-2 md:col-span-1 xs:flex items-end justify-end">
-              <input value="Request a Quote" type="submit" className="bg-blue-teal hover:bg-orange-mid text-white text-base md:text-lg font-bold rounded-full transition duration-500 ease-in-out px-10 md:px-14 py-4 shadow-sm" />
+              <input value="Request a Quote" type="submit" className="bg-blue-ice hover:bg-pink-mid text-white text-base md:text-lg font-bold rounded-full transition duration-500 ease-in-out px-10 md:px-14 py-4 shadow-sm" />
           </div>
         </div>
       </form>

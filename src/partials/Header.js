@@ -35,7 +35,7 @@ const Header = ({ title, description, image, url }) => {
             <div className="flex justify-between items-center">
               <div className="flex items-center">
                 <a className="hover:opacity-80 duration-500 transition-all ease-in-out" href="/">
-                  <h1 className="djcg-header-1"><img src={djcgLogo} alt="dj Chris G" width={916} height={537} className="w-96 md:w-64 lg:w-96"/></h1>
+                  <h1 className="djcg-header-1"><img src={djcgLogo} alt="dj Chris G" width={362} height={154} className="w-72 md:w-64"/></h1>
                 </a>
               </div>
 
@@ -43,8 +43,8 @@ const Header = ({ title, description, image, url }) => {
                 <button
                   type="button"
                   className={`text-4xl ${
-                    showNav ? "text-blue-teal" : "text-white"
-                  } hover:text-blue-teal focus:outline-none outline-none transition duration-500 ease-in-out`}
+                    showNav ? "text-blue-ice" : "text-white"
+                  } hover:text-blue-ice focus:outline-none outline-none transition duration-500 ease-in-out`}
                   aria-label="toggle menu"
                   onClick={() => setShowNav(!showNav)}
                 >

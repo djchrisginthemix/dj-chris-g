@@ -15,12 +15,12 @@ const Button = ({
   dataInitialCost,
 }) => {
   const colorClasses = {
-    blue: "bg-blue-teal hover:bg-orange-mid text-white",
-    orange: "bg-orange-mid hover:bg-blue-teal text-white",
-    orangeYellow: "bg-orange-mid hover:bg-yellow-mid text-white",
-    yellow: "bg-yellow-mid hover:bg-orange-mid text-white",
-    white: "bg-white hover:bg-orange-mid text-gray-800 hover:text-white",
-    whiteBlue: "bg-white hover:bg-blue-teal text-gray-800 hover:text-white",
+    blue: "bg-blue-ice hover:bg-pink-mid text-white",
+    orange: "bg-pink-mid hover:bg-blue-ice text-white",
+    orangeYellow: "bg-pink-mid hover:bg-yellow-mid text-white",
+    yellow: "bg-yellow-mid hover:bg-pink-mid text-white",
+    white: "bg-white hover:bg-pink-mid text-gray-800 hover:text-white",
+    whiteBlue: "bg-white hover:bg-blue-ice text-gray-800 hover:text-white",
   };
 
   const sizeClasses = {

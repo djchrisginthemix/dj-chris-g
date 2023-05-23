@@ -26,14 +26,15 @@ module.exports = {
     extend: {
       colors: {
         black: {
-          mid: '#102b4a'
+          mid: '#09192b',
+          asphalt: '#040c16',
         },
         blue: {
-          teal: '#02d7fc',
-          'teal-dark': '#072a28',
+          ice: '#02d7fc',
+          meth: '#102b4a',
         },
-        orange: {
-          mid: '#f98110',
+        pink: {
+          mid: '#f46bd1',
         },
         yellow: {
           mid: '#fee101',

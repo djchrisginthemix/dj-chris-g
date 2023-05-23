@@ -147,7 +147,7 @@ const Portfolio = () => {
                 ))}
               </Slider>
               <button
-                className="absolute top-4 right-4 bg-orange-mid hover:bg-blue-teal text-white font-bold text-xl md:text-lg px-10 md:px-8 py-4 md:py-3 transition duration-500 ease-in-out rounded-full shadow-sm"
+                className="absolute top-4 right-4 bg-pink-mid hover:bg-blue-ice text-white font-bold text-xl md:text-lg px-10 md:px-8 py-4 md:py-3 transition duration-500 ease-in-out rounded-full shadow-sm"
                 onClick={closeModal}
               >
                 Close

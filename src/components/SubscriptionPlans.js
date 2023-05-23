@@ -89,7 +89,7 @@ const Pricing = () => {
                 className="djcg-package bg-black-mid shadow-lg rounded-lg mb-10 lg:mb-0 flex flex-col"
                 key={index}
               >
-                <div className="flex flex-col items-center justify-center w-full bg-blue-teal p-5 rounded-t-lg min-h-12rem text-center">
+                <div className="flex flex-col items-center justify-center w-full bg-blue-ice p-5 rounded-t-lg min-h-12rem text-center">
                   <h3 className="text-2xl font-extrabold text-white mb-2">
                     {plan.name}
                   </h3>
@@ -107,7 +107,7 @@ const Pricing = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="flex flex-col items-center justify-center px-6 py-8 bg-blue-teal-dark text-white">
+                <div className="flex flex-col items-center justify-center px-6 py-8 bg-blue-ice-dark text-white">
                   <div className="text-sm md:text-base text-center font-bold mb-2">
                     One-time payment<br /> of {plan.initialCost}{' '}
                     <span className="text-xs md:text-sm text-gray-200 italic font-semibold inline-block">
@@ -118,7 +118,7 @@ const Pricing = () => {
                     {plan.price}
                   </div>
                 </div>
-                <div className="flex flex-col items-center justify-center w-full bg-orange-mid rounded-b-lg px-6 py-8">
+                <div className="flex flex-col items-center justify-center w-full bg-pink-mid rounded-b-lg px-6 py-8">
                    <Button
                     text="Select Plan"
                     useLink={true}

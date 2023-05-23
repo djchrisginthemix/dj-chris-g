@@ -24,13 +24,13 @@ const Footer = () => {
             <div id="djcg-footer-connect-with-us" className="flex flex-col w-full order-2">
               <div className="text-yellow-mid text-left text-lg sm:text-xl uppercase font-bold mb-4 sm:mb-6">Connect with us</div>
               <div className="flex gap-2">
-                <a href="https://www.facebook.com/" className="djcg-icon mr-4 hover:text-blue-teal transition duration-500 ease-in-out">
+                <a href="https://www.facebook.com/" className="djcg-icon mr-4 hover:text-blue-ice transition duration-500 ease-in-out">
                   <FaFacebook className="text-3xl" />
                 </a>
-                <a href="https://www.twitter.com/" className="djcg-icon mr-4 hover:text-blue-teal transition duration-500 ease-in-out">
+                <a href="https://www.twitter.com/" className="djcg-icon mr-4 hover:text-blue-ice transition duration-500 ease-in-out">
                   <FaTwitter className="text-3xl" />
                 </a>
-                <a href="https://www.instagram.com/" className="djcg-icon hover:text-blue-teal transition duration-500 ease-in-out">
+                <a href="https://www.instagram.com/" className="djcg-icon hover:text-blue-ice transition duration-500 ease-in-out">
                   <FaInstagram className="text-3xl" />
                 </a>
               </div>
@@ -38,10 +38,10 @@ const Footer = () => {
               <div id="djcg-footer-links" className="flex flex-col w-full mt-12 sm:mt-16">
               <div className="text-yellow-mid text-left text-lg sm:text-xl uppercase font-bold mb-4 sm:mb-6">Resources</div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-base">
-                  <a href="/terms-of-service" className="text-white hover:text-blue-teal hover:underline transition duration-500 ease-in-out">Terms of Service</a>
-                  <a href="/privacy-policy" className="text-white hover:text-blue-teal hover:underline transition duration-500 ease-in-out">Privacy Policy</a>
-                  <a href="/disclaimer" className="text-white hover:text-blue-teal hover:underline transition duration-500 ease-in-out">Disclaimer</a>
-                  <a href="/operating-agreement" className="text-white hover:text-blue-teal hover:underline transition duration-500 ease-in-out">Operating Agreement</a>
+                  <a href="/terms-of-service" className="text-white hover:text-blue-ice hover:underline transition duration-500 ease-in-out">Terms of Service</a>
+                  <a href="/privacy-policy" className="text-white hover:text-blue-ice hover:underline transition duration-500 ease-in-out">Privacy Policy</a>
+                  <a href="/disclaimer" className="text-white hover:text-blue-ice hover:underline transition duration-500 ease-in-out">Disclaimer</a>
+                  <a href="/operating-agreement" className="text-white hover:text-blue-ice hover:underline transition duration-500 ease-in-out">Operating Agreement</a>
                 </div>
               </div>
             </div>
@@ -51,10 +51,10 @@ const Footer = () => {
               <div className="text-yellow-mid text-left text-lg sm:text-xl uppercase font-bold mb-4 sm:mb-6">Contact us</div>
               <div className="flex flex-col">
                 <h4 className="text-base font-bold mb-2">dj Chris G LLC</h4>
-                <a href="tel:845-558-5493" className="mr-4 hover:underline hover:text-blue-teal text-lg transition duration-500 ease-in-out">
+                <a href="tel:845-558-5493" className="mr-4 hover:underline hover:text-blue-ice text-lg transition duration-500 ease-in-out">
                   845-558-5493
                 </a>
-                <a href="mailto:help@thecaffeineteam.org" className="hover:underline hover:text-blue-teal text-lg transition duration-500 ease-in-out">
+                <a href="mailto:help@thecaffeineteam.org" className="hover:underline hover:text-blue-ice text-lg transition duration-500 ease-in-out">
                   help@thecaffeineteam.org
                 </a>
               </div>

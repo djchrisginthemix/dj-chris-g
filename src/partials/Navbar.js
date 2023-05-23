@@ -20,7 +20,7 @@ const Navbar = ({ showNav, setShowNav }) => {
       {links.map((link) => (
         <a
           key={link.title}
-          className={`block mt-4 md:inline-block md:mt-0 md:mx-4 font-semibold ${activeLink === link.link ? "text-blue-teal" : "text-white"} hover:text-blue-teal`}
+          className={`block mt-4 md:inline-block md:mt-0 md:mx-4 font-semibold ${activeLink === link.link ? "text-blue-ice" : "text-white"} hover:text-blue-ice`}
           href={link.link}
           onClick={() => handleLinkClick(link.link)}
         >

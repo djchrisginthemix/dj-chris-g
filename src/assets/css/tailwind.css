@@ -27,7 +27,7 @@ textarea[name="message"]:invalid {
   box-shadow: none;
 }
 .djcg-icon:hover {
-  @apply text-orange-mid;
+  @apply text-pink-mid;
 }
 .slick-dots.custom-dots {
   @apply relative bottom-0;
@@ -40,14 +40,14 @@ textarea[name="message"]:invalid {
 }
 .slick-arrow.slick-next,
 .slick-arrow.slick-prev {
-  @apply text-blue-teal-dark transition duration-500 ease-in-out;
+  @apply text-blue-meth transition duration-500 ease-in-out;
   width: 2rem;
   height: 2rem;
   z-index: 10;
 }
 .slick-arrow.slick-next:hover,
 .slick-arrow.slick-prev:hover {
-  @apply text-blue-teal;
+  @apply text-blue-ice;
 }
 @media (max-width: 767px) {
   .slick-slider {
