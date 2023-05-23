@@ -27,14 +27,14 @@ const GenreCard = ({ icon, title, description, delay, selected, onChange }) => {
         <div className='w-full flex gap-x-3 items-center mb-5'>
           <div
             className={`text-3xl sm:text-4xl lg:text-5xl transition duration-500 ease-in-out ${
-              selected ? 'text-yellow-mid' : 'text-gray-200'
+              selected ? 'text-orange-mid' : 'text-gray-200'
             }`}
           >
             {icon}
           </div>
           <h3
             className={`text-xl sm:text-2xl font-bold transition duration-500 ease-in-out ${
-              selected ? 'text-gray-800' : 'text-gray-300'
+              selected ? 'text-gray-500' : 'text-gray-300'
             }`}
           >
             {title}

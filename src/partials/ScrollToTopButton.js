@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { WiLightning } from 'react-icons/wi'
+import { GiMusicalNotes } from 'react-icons/gi'
 
 function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false)
@@ -29,10 +29,10 @@ function ScrollToTopButton() {
     <>
       {isVisible && (
         <button
-          className="fixed bottom-5 right-5 transition duration-500 ease-in-out bg-yellow-mid hover:bg-transparent text-white hover:text-white p-3 rounded-full shadow-md hover:shadow-none"
+          className="fixed bottom-5 right-5 transition duration-500 ease-in-out bg-blue-ice hover:bg-transparent text-white hover:text-white p-3 rounded-full shadow-md hover:shadow-none"
           onClick={handleScrollToTop}
         >
-          <WiLightning className="text-6xl" />
+          <GiMusicalNotes className="text-5xl" />
         </button>
       )}
     </>

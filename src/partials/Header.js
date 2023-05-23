@@ -3,7 +3,7 @@ import djcgLogo from '../assets/images/djcg-logo.png';
 import { Zoom } from "react-awesome-reveal";
 import SEO from '../components/SEO';
 import Navbar from '../partials/Navbar';
-import { MdOutlineCoffeeMaker, MdCoffeeMaker } from 'react-icons/md';
+import { RiFolderMusicFill, RiFolderMusicLine } from 'react-icons/ri';
 
 const Header = ({ title, description, image, url }) => {
   const [showNav, setShowNav] = useState(false);
@@ -30,12 +30,12 @@ const Header = ({ title, description, image, url }) => {
     <Zoom triggerOnce {...zoomSettings}>
       <header className="">
         <SEO title={title} description={description} image={image} url={url} />
-        <div className="w-full max-w-8xl mx-auto pl-2 pr-4 sm:px-6 py-3 sm:py-6">
+        <div className="w-full max-w-8xl mx-auto pl-4 pr-4 sm:px-6 py-3 sm:py-6">
           <div className="flex flex-col gap-4 md:justify-between md:items-center">
             <div className="flex justify-between items-center">
               <div className="flex items-center">
                 <a className="hover:opacity-80 duration-500 transition-all ease-in-out" href="/">
-                 <img src={djcgLogo} alt="dj Chris G" width={362} height={154} className="w-52 md:w-48"/>
+                 <img src={djcgLogo} alt="dj Chris G" width={362} height={154} className="w-52 md:w-48 pt-4 md:pt-0 drop-shadow-custom"/>
                 </a>
               </div>
 
@@ -48,7 +48,7 @@ const Header = ({ title, description, image, url }) => {
                   aria-label="toggle menu"
                   onClick={() => setShowNav(!showNav)}
                 >
-                  {showNav ? <MdCoffeeMaker /> : <MdOutlineCoffeeMaker />}
+                  {showNav ? <RiFolderMusicFill /> : <RiFolderMusicLine />}
                 </button>
               </div>
             </div>

@@ -17,8 +17,8 @@ const Button = ({
   const colorClasses = {
     blue: "bg-blue-ice hover:bg-pink-mid text-white",
     orange: "bg-pink-mid hover:bg-blue-ice text-white",
-    orangeYellow: "bg-pink-mid hover:bg-yellow-mid text-white",
-    yellow: "bg-yellow-mid hover:bg-pink-mid text-white",
+    orangeYellow: "bg-pink-mid hover:bg-orange-mid text-white",
+    yellow: "bg-orange-mid hover:bg-pink-mid text-white",
     white: "bg-white hover:bg-pink-mid text-gray-800 hover:text-white",
     whiteBlue: "bg-white hover:bg-blue-ice text-gray-800 hover:text-white",
   };

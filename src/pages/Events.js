@@ -8,7 +8,7 @@ import Reveal from 'react-awesome-reveal'
 import Contact from '../components/Contact'
 import Header from '../partials/Header'
 
-const Portfolio = () => {
+const Events = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [activeModalSlide, setActiveModalSlide] = useState(0);
 
@@ -75,20 +75,20 @@ const Portfolio = () => {
     delay: 100,
   }
   return (
-    <div id="portfolio-page" className="bg-black-asphalt">
+    <div id="Events-page" className="bg-black-asphalt">
       <Header
-        title="Our Work"
+        title="Events"
         description="Seasoned maestro of dance, electronic, hip-hop, and underground house music, renowned for mesmerizing sets and creating unforgettable atmospheres"
         image="../assets/images/djcg-logo.png"
-        url="https://thecaffeineteam.org/portfolio"
+        url="https://thecaffeineteam.org/events"
       />
-      <div className="djcg-portfolio-content max-w-7xl mx-auto px-6 py-20">
+      <div className="djcg-events-content max-w-7xl mx-auto px-6 py-20">
         <div className="flex flex-col items-center">
           <h2 className="djcg-header-2 text-center mt-8 mb-10 sm:mb-12">
             Build With dj Chris G
           </h2>
           <Reveal {...revealSettings}>
-            <div className="portfolio-intro text-base sm:text-lg max-w-5xl mx-auto text-center text-gray-500 mb-10 sm:mb-16 md:mb-20 lg:mb-24">
+            <div className="events-intro text-base sm:text-lg max-w-5xl mx-auto text-center text-gray-500 mb-10 sm:mb-16 md:mb-20 lg:mb-24">
               <p className="mb-5 md:mb-6">
               dj Chris G is a highly experienced DJ with over 10 years of expertise in the realms of dance, electronic, hip-hop, and underground house music. With a passion for creating unforgettable musical experiences, Chris G has honed his skills and cultivated a deep understanding of various genres, allowing him to curate dynamic and energetic sets that keep the crowd moving and grooving. His extensive knowledge of dance, electronic, hip-hop, and underground house music enables him to seamlessly blend tracks, creating seamless transitions and maintaining an infectious energy on the dance floor. With a diverse background and a keen ear for selecting the right tracks for any occasion, DJ Chris G is renowned for his ability to create an immersive and memorable atmosphere, leaving a lasting impression on audiences and solidifying his reputation as a sought-after DJ in the industry.</p>
             </div>
@@ -152,4 +152,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default Events

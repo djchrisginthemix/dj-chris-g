@@ -51,7 +51,7 @@ const ServiceInput = ({ name, selectedServices, onChange }) => {
               htmlFor={`${service.trim().replace(/\s+/g, '-').toLowerCase()}`}
               className={`inline-flex items-center px-4 py-2 font-medium rounded-full cursor-pointer transition duration-500 ease-in-out ${
                 isChecked
-                  ? 'bg-yellow-mid opacity-100 text-gray-800'
+                  ? 'bg-orange-mid opacity-100 text-gray-800'
                   : 'bg-gray-200 text-gray-500 opacity-50'
               }`}
             >
@@ -111,7 +111,7 @@ const SubscriptionInput = ({ name, selectedSubscriptions, onChange }) => {
                 .toLowerCase()}`}
               className={`inline-flex items-center px-4 py-2 font-medium rounded-full cursor-pointer transition duration-500 ease-in-out ${
                 isChecked
-                  ? 'bg-yellow-mid opacity-100 text-gray-800'
+                  ? 'bg-orange-mid opacity-100 text-gray-800'
                   : 'bg-gray-200 text-gray-500 opacity-50'
               }`}
             >

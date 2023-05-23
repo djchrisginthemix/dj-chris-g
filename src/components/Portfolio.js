@@ -1,6 +1,5 @@
 import React from "react";
 import { Reveal } from "react-awesome-reveal";
-import { GiCoffeeCup } from "react-icons/gi";
 import SectionHeading from './SectionHeading'
 
 const projects = [
@@ -36,7 +35,7 @@ const projects = [
   },
 ];
 
-const Portfolio = () => {
+const Events = () => {
   const revealSettings = {
     from: "bottom",
     distance: "20px",
@@ -45,9 +44,9 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio-section" className="bg-black-asphalt px-6 py-10 sm:py-14 md:py-16 lg:py-20">
+    <section id="events-section" className="bg-black-asphalt px-6 py-10 sm:py-14 md:py-16 lg:py-20">
       <div className="w-full max-w-7xl mx-auto">
-        <SectionHeading text="Portfolio" />
+        <SectionHeading text="Events" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl-grid-cols-4 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="relative">
@@ -65,11 +64,9 @@ const Portfolio = () => {
                   <div className="text-2xl sm:text-3xl font-bold text-blue-ice mb-4">{project.name}</div>
                   <p className="mb-6">{project.description}</p>
                   <a
-                    href="/portfolio"
-                    className="flex items-center justify-center text-lg font-bold text-yellow-mid"
-                  >
-                    View Project
-                    <GiCoffeeCup className="ml-2 text-4xl" />
+                    href="/events"
+                    className="flex items-center justify-center text-lg font-bold text-orange-mid"
+                  >View Events
                   </a>
                 </Reveal>
               </div>
@@ -80,4 +77,4 @@ const Portfolio = () => {
     </section>
   );
 };
-export default Portfolio;
+export default Events;

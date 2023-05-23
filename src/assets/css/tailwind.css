@@ -7,6 +7,9 @@ body {
   font-size: 16px;
   @apply bg-black-asphalt font-body m-0 p-0;
 }
+h1.djcg-header-1 {
+  @apply font-headline text-5xl sm:text-6xl md:text-7xl font-extrabold text-white;
+}
 h2.djcg-header-2 {
   @apply font-headline text-4xl sm:text-5xl font-extrabold text-white;
 }
@@ -41,4 +44,10 @@ textarea[name="message"]:invalid {
 
 .drop-shadow-custom {
   filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.5))
+}
+.react-parallax-bgimage {
+  width: auto!important;
+  max-width: 100%!important;
+  height: auto!important;
+  min-height: 100vh;
 }

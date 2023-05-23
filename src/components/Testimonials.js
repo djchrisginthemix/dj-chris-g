@@ -1,5 +1,4 @@
 import React from 'react'
-import SectionHeading from './SectionHeading'
 import Reveal from 'react-awesome-reveal'
 
 const Testimonials = () => {
@@ -15,7 +14,6 @@ const Testimonials = () => {
       className='py-10 sm:py-14 md:py-16 lg:py-20'
     >
       <div className='mx-auto px-6 max-w-7xl'>
-        <SectionHeading text='Testimonials' />
         <Reveal triggerOnce {...revealSettings}>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
             <div className='bg-white rounded-lg shadow-md p-6'>

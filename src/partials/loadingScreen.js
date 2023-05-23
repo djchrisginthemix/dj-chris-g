@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import djcgLogo from '../assets/images/djcg-logo.png';
 import '../assets/css/tct-loading-screen.css'
-import loading1 from '../assets/images/loading/loading1.jpg'
-import loading2 from '../assets/images/loading/loading2.jpg'
 import loading3 from '../assets/images/loading/loading3.jpg'
 import loading4 from '../assets/images/loading/loading4.jpg'
 import loading5 from '../assets/images/loading/loading5.jpg'
@@ -13,10 +11,13 @@ import loading9 from '../assets/images/loading/loading9.jpg'
 import loading10 from '../assets/images/loading/loading10.jpg'
 import loading11 from '../assets/images/loading/loading11.jpg'
 import loading12 from '../assets/images/loading/loading12.jpg'
+import loading1 from '../assets/images/loading/loading1.jpg'
+import loading2 from '../assets/images/loading/loading2.jpg'
+
 
 const LoadingScreen = () => {
   const slideUrls = useMemo(
-    () => [loading1, loading2, loading3, loading4, loading5, loading6, loading7, loading8, loading9, loading10, loading11, loading12],
+    () => [loading3, loading4, loading5, loading6, loading7, loading8, loading9, loading10, loading11, loading12, loading1, loading2],
     []
   )
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
