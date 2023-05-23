@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import caffeineLogo from '../assets/images/svgs/tct-logo.svg';
+import djcgLogo from '../assets/images/djcg-logo.png';
 import { Zoom } from "react-awesome-reveal";
 import SEO from '../components/SEO';
 import Navbar from '../partials/Navbar';
@@ -28,14 +28,14 @@ const Header = ({ title, description, image, url }) => {
 
   return (
     <Zoom triggerOnce {...zoomSettings}>
-      <header className="bg-beige-light shadow">
+      <header className="">
         <SEO title={title} description={description} image={image} url={url} />
         <div className="w-full max-w-8xl mx-auto pl-2 pr-4 sm:px-6 py-3">
-          <div className="flex flex-col md:flex-row md:justify-between md:items-center">
+          <div className="flex flex-col md:justify-between md:items-center">
             <div className="flex justify-between items-center">
               <div className="flex items-center">
                 <a className="hover:opacity-80 duration-500 transition-all ease-in-out" href="/">
-                  <h1 className="tct-header-1"><img src={caffeineLogo} alt="The Caffeine Team" width={916} height={537} className="w-96 md:w-64 lg:w-96"/></h1>
+                  <h1 className="djcg-header-1"><img src={djcgLogo} alt="dj Chris G" width={916} height={537} className="w-96 md:w-64 lg:w-96"/></h1>
                 </a>
               </div>
 
@@ -43,7 +43,7 @@ const Header = ({ title, description, image, url }) => {
                 <button
                   type="button"
                   className={`text-4xl ${
-                    showNav ? "text-blue-teal" : "text-gray-800"
+                    showNav ? "text-blue-teal" : "text-white"
                   } hover:text-blue-teal focus:outline-none outline-none transition duration-500 ease-in-out`}
                   aria-label="toggle menu"
                   onClick={() => setShowNav(!showNav)}

@@ -17,7 +17,7 @@ const Testimonials = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-md p-6">
               <p className="text-gray-600">
-                "Working with the team at The Caffeine Team was a great experience. They took the time to understand our business and were able to create a website that exceeded our expectations. The attention to detail and personal touch really made a difference. We couldn't be happier with the end result."
+                "Working with the team at dj Chris G was a great experience. They took the time to understand our business and were able to create a website that exceeded our expectations. The attention to detail and personal touch really made a difference. We couldn't be happier with the end result."
               </p>
               <div className="flex items-center mt-4">
                 <div className="mr-4">
@@ -35,7 +35,7 @@ const Testimonials = () => {
             </div>
             <div className="bg-white rounded-lg shadow-md p-6">
               <p className="text-gray-600">
-                "I was hesitant to redesign my website, but the team at The Caffeine Team made the process seamless. They were able to modernize my site and optimize it for search engines, which has resulted in more traffic and leads. Their communication and expertise were top-notch. Highly recommend!"
+                "I was hesitant to redesign my website, but the team at dj Chris G made the process seamless. They were able to modernize my site and optimize it for search engines, which has resulted in more traffic and leads. Their communication and expertise were top-notch. Highly recommend!"
               </p>
               <div className="flex items-center mt-4">
                 <div className="mr-4">
@@ -53,7 +53,7 @@ const Testimonials = () => {
             </div>
             <div className="bg-white rounded-lg shadow-md p-6">
               <p className="text-gray-600">
-                "I had a great experience working with The Caffeine Team. From the initial consultation to the final launch, they were professional, responsive, and accommodating. They really went above and beyond to make sure my website was perfect. I couldn't be happier with the outcome."
+                "I had a great experience working with dj Chris G. From the initial consultation to the final launch, they were professional, responsive, and accommodating. They really went above and beyond to make sure my website was perfect. I couldn't be happier with the outcome."
               </p>
               <div className="flex items-center mt-4">
                 <div className="mr-4">

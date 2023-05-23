@@ -3,8 +3,8 @@
   margin: 0 auto;
 }
 
-#caffeine-team-loading-screen :before,
-#caffeine-team-loading-screen :after {
+#djcg-team-loading-screen :before,
+#djcg-team-loading-screen :after {
   position: absolute;
   content: '';
 }

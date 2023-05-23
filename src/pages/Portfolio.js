@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react'
-import caffeineLogo from '../assets/images/svgs/tct-logo-mobile.svg'
+import djcgLogo from '../assets/images/djcg-logo.png'
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
 import Slider from 'react-slick'
 import { projects } from '../partials/ProjectsData' // An array of project data
@@ -8,7 +8,6 @@ import 'slick-carousel/slick/slick-theme.css'
 import Reveal from 'react-awesome-reveal'
 import Contact from '../components/Contact'
 import Header from '../partials/Header'
-import Process from '../partials/Process'
 
 const Portfolio = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -77,49 +76,29 @@ const Portfolio = () => {
     delay: 100,
   }
   return (
-    <div id="portfolio-page" className="bg-white">
+    <div id="portfolio-page" className="bg-black-mid">
       <Header
         title="Our Work"
         description="Innovative, High-Performance Web Experiences That Drive Results. We love websites and everything related!"
-        image="../assets/images/icons/tct-logo-mobile.svg"
+        image="../assets/images/djcg-logo.png"
         url="https://thecaffeineteam.org/portfolio"
       />
-      <div className="tct-portfolio-content max-w-7xl mx-auto px-6 py-20">
+      <div className="djcg-portfolio-content max-w-7xl mx-auto px-6 py-20">
         <div className="flex flex-col items-center">
           <img
-            src={caffeineLogo}
-            alt="The Caffeine Team"
+            src={djcgLogo}
+            alt="dj Chris G"
             width={200}
             height={200}
             className=""
           />
-          <h2 className="tct-header-2 text-center mt-8 mb-10 sm:mb-12">
-            Build With The Caffeine Team
+          <h2 className="djcg-header-2 text-center mt-8 mb-10 sm:mb-12">
+            Build With dj Chris G
           </h2>
           <Reveal {...revealSettings}>
             <div className="portfolio-intro text-base sm:text-lg max-w-5xl mx-auto text-center text-gray-500 mb-10 sm:mb-16 md:mb-20 lg:mb-24">
               <p className="mb-5 md:mb-6">
-                At The Caffeine Team, we specialize in creating impactful online
-                experiences. As experts in website design and development, we
-                combine technical expertise with artistic flair to deliver
-                captivating websites that meet your unique needs. We understand
-                the importance of a well-designed website in capturing your
-                audience's attention and driving business growth. Whether you're
-                a startup establishing your online presence or an established
-                company looking for a digital refresh, we're here to bring your
-                vision to life. With our knowledge of the latest web
-                technologies and design trends, we ensure your website not only
-                reflects your brand but also delivers optimal performance and
-                user engagement.
-              </p>
-              <p>
-                Take a look at our diverse portfolio showcasing our expertise in
-                website design, development, and coding. We take pride in
-                delivering tailored solutions, whether it's creating a custom
-                website, developing e-commerce platforms, or implementing
-                responsive design for seamless mobile experiences. Join us on
-                this journey as The Caffeine Team helps you elevate your online
-                presence and achieve success.
+...
               </p>
             </div>
           </Reveal>
@@ -139,24 +118,6 @@ const Portfolio = () => {
               <div className="p-4">
                 <h2 className="text-xl font-bold mb-2">{project.title}</h2>
                 <p className="text-gray-700 mb-4">{project.description}</p>
-                <div className="flex justify-between items-center">
-                  <a
-                    href={project.codepenLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                  >
-                    Code
-                  </a>
-                  <a
-                    href={project.liveDemoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-                  >
-                    Live
-                  </a>
-                </div>
               </div>
             </div>
           ))}
@@ -195,7 +156,6 @@ const Portfolio = () => {
           </div>
         )}
       </div>
-      <Process />
       <Contact />
     </div>
   )

@@ -72,7 +72,7 @@ const FooterForm = () => {
         <Form>
           <div className="max-w-7xl mx-auto w-full">
             <div className="mb-6">
-              <label htmlFor="name" className="tct-label block text-white mb-3">
+              <label htmlFor="name" className="djcg-label block text-white mb-3">
                 Name
               </label>
               <Field
@@ -80,7 +80,7 @@ const FooterForm = () => {
                 name="name"
                 type="text"
                 placeholder="Enter your name"
-                className="tct-input w-full rounded-md bg-white text-gray-800"
+                className="djcg-input w-full rounded-md bg-white text-gray-800"
               />
               <ErrorMessage
                 name="name"
@@ -91,7 +91,7 @@ const FooterForm = () => {
             <div className="mb-6">
               <label
                 htmlFor="email"
-                className="tct-label block text-white mb-3"
+                className="djcg-label block text-white mb-3"
               >
                 Email
               </label>
@@ -100,7 +100,7 @@ const FooterForm = () => {
                 name="email"
                 type="email"
                 placeholder="Enter your email address"
-                className="tct-input w-full rounded-md bg-white text-gray-800"
+                className="djcg-input w-full rounded-md bg-white text-gray-800"
               />
               <ErrorMessage
                 name="email"
@@ -111,7 +111,7 @@ const FooterForm = () => {
             <div className="mb-6">
               <label
                 htmlFor="phone"
-                className="tct-label block text-white mb-3"
+                className="djcg-label block text-white mb-3"
               >
                 Phone
               </label>
@@ -120,7 +120,7 @@ const FooterForm = () => {
                 name="phone"
                 type="text"
                 placeholder="Enter your phone number"
-                className="tct-input w-full rounded-md bg-white text-gray-800"
+                className="djcg-input w-full rounded-md bg-white text-gray-800"
                 onChange={(e) => {
                   const formattedPhone = formatPhoneNumber(e.target.value)
                   setFieldValue('phone', formattedPhone)
@@ -136,7 +136,7 @@ const FooterForm = () => {
             <div className="mb-6">
               <label
                 htmlFor="message"
-                className="tct-label block text-white mb-3"
+                className="djcg-label block text-white mb-3"
               >
                 Message
               </label>
@@ -146,7 +146,7 @@ const FooterForm = () => {
                 name="message"
                 placeholder="Describe what you are looking for here"
                 rows="5"
-                className="tct-textarea w-full rounded-md bg-white text-gray-800"
+                className="djcg-textarea w-full rounded-md bg-white text-gray-800"
               />
               <ErrorMessage
                 name="message"

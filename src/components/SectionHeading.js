@@ -17,8 +17,8 @@ const SectionHeading = ({ text, color="yellow" }) => {
     white: "bg-white",
   };
   return (
-    <div className="tct-header-3-container flex flex-col items-center justify-center text-center px-8 mb-8 sm:mb-12">
-      <h3 className="tct-header-3">{text}</h3>
+    <div className="djcg-header-3-container flex flex-col items-center justify-center text-center px-8 mb-8 sm:mb-12">
+      <h3 className="djcg-header-3">{text}</h3>
       <Reveal triggerOnce {...revealSettings}>
       <div className={`h-1 w-20 ${colorClasses[color]}`}></div>
       </Reveal>

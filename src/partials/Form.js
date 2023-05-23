@@ -256,7 +256,7 @@ console.log(initialValues)
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        'form-name': 'The Caffeine Team Contact',
+        'form-name': 'dj Chris G Contact',
         ...values
       })
     })
@@ -295,7 +295,7 @@ console.log(initialValues)
       >
         {({ resetForm, setFieldValue }) => (
           <Form
-            name='The Caffeine Team Contact'
+            name='dj Chris G Contact'
             netlify-honeypot='bot-field'
             data-netlify={true}
           >
@@ -304,16 +304,16 @@ console.log(initialValues)
               type='hidden'
               name='form-name'
               className='hidden'
-              value='The Caffeine Team Contact'
+              value='dj Chris G Contact'
             />
             <input type='hidden' name='bot-field' className='hidden' />
 
             <div className='max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 sm:gap-8 md:gap-16 lg:gap-20'>
-              <div className='tct-contact-left-col flex flex-col flex-1 mb-6'>
+              <div className='djcg-contact-left-col flex flex-col flex-1 mb-6'>
                 <div className='field name-group mb-4 md:mb-5'>
                   <label
                     htmlFor='name'
-                    className={`tct-label block text-lg sm:text-base md:text-lg ${colorClasses[color]} mb-3`}
+                    className={`djcg-label block text-lg sm:text-base md:text-lg ${colorClasses[color]} mb-3`}
                   >
                     Name
                   </label>
@@ -322,7 +322,7 @@ console.log(initialValues)
                     name='name'
                     type='text'
                     placeholder='Enter your name'
-                    className={`tct-input block w-full shadow-sm border-2 border-${borderColor}-300 rounded-md text-gray-800 text-lg sm:text-base  focus:ring-blue-500 focus:border-blue-500`}
+                    className={`djcg-input block w-full shadow-sm border-2 border-${borderColor}-300 rounded-md text-gray-800 text-lg sm:text-base  focus:ring-blue-500 focus:border-blue-500`}
                   />
                   <ErrorMessage
                     name='name'
@@ -333,7 +333,7 @@ console.log(initialValues)
                 <div className='field email-group mb-4 md:mb-5'>
                   <label
                     htmlFor='email'
-                    className={`tct-label block text-lg sm:text-base md:text-lg ${colorClasses[color]} mb-3`}
+                    className={`djcg-label block text-lg sm:text-base md:text-lg ${colorClasses[color]} mb-3`}
                   >
                     Email
                   </label>
@@ -342,7 +342,7 @@ console.log(initialValues)
                     name='email'
                     type='email'
                     placeholder='Enter your email address'
-                    className={`tct-input block w-full shadow-sm border-2 border-${borderColor}-300 rounded-md text-gray-800 text-lg sm:text-base  focus:ring-blue-500 focus:border-blue-500`}
+                    className={`djcg-input block w-full shadow-sm border-2 border-${borderColor}-300 rounded-md text-gray-800 text-lg sm:text-base  focus:ring-blue-500 focus:border-blue-500`}
                   />
                   <ErrorMessage
                     name='email'
@@ -353,7 +353,7 @@ console.log(initialValues)
                 <div className='field phone-group mb-4 md:mb-5'>
                   <label
                     htmlFor='phone'
-                    className={`tct-label block text-lg sm:text-base md:text-lg ${colorClasses[color]} mb-3`}
+                    className={`djcg-label block text-lg sm:text-base md:text-lg ${colorClasses[color]} mb-3`}
                   >
                     Phone
                   </label>
@@ -362,7 +362,7 @@ console.log(initialValues)
                     name='phone'
                     type='text'
                     placeholder='Enter your phone number'
-                    className={`tct-input block w-full shadow-sm border-2 border-${borderColor}-300 rounded-md text-gray-800 text-lg sm:text-base  focus:ring-blue-500 focus:border-blue-500`}
+                    className={`djcg-input block w-full shadow-sm border-2 border-${borderColor}-300 rounded-md text-gray-800 text-lg sm:text-base  focus:ring-blue-500 focus:border-blue-500`}
                     onChange={e => {
                       const formattedPhone = formatPhoneNumber(e.target.value)
                       setFieldValue('phone', formattedPhone)
@@ -378,7 +378,7 @@ console.log(initialValues)
                 <div className='field message-group mb-4 md:mb-5'>
                   <label
                     htmlFor='message'
-                    className={`tct-label block text-lg sm:text-base md:text-lg ${colorClasses[color]} mb-3`}
+                    className={`djcg-label block text-lg sm:text-base md:text-lg ${colorClasses[color]} mb-3`}
                   >
                     Message
                   </label>
@@ -388,7 +388,7 @@ console.log(initialValues)
                     name='message'
                     placeholder='Describe what you are looking for here'
                     rows='5'
-                    className={`tct-textarea block w-full shadow-sm border-2 border-${borderColor}-300 rounded-md text-gray-800 text-lg sm:text-base focus:ring-blue-500 focus:border-blue-500`}
+                    className={`djcg-textarea block w-full shadow-sm border-2 border-${borderColor}-300 rounded-md text-gray-800 text-lg sm:text-base focus:ring-blue-500 focus:border-blue-500`}
                   />
                   <ErrorMessage
                     name='message'
@@ -397,11 +397,11 @@ console.log(initialValues)
                   />
                 </div>
               </div>
-              <div className='tct-contact-right-col flex flex-col flex-1 justify-between'>
+              <div className='djcg-contact-right-col flex flex-col flex-1 justify-between'>
                 <div className='field subscription-group mb-6 md:mb-8'>
                   <label
                     htmlFor='subscriptions'
-                    className={`tct-label block text-lg sm:text-base md:text-lg ${colorClasses[color]} mb-5`}
+                    className={`djcg-label block text-lg sm:text-base md:text-lg ${colorClasses[color]} mb-5`}
                   >
                     Find a subscription that's right for you:
                   </label>
@@ -420,7 +420,7 @@ console.log(initialValues)
                 <div className='field services-group mb-4 md:mb-5'>
                   <label
                     htmlFor='services'
-                    className={`tct-label block text-lg sm:text-base md:text-lg ${colorClasses[color]} mb-5`}
+                    className={`djcg-label block text-lg sm:text-base md:text-lg ${colorClasses[color]} mb-5`}
                   >
                     or let's build a custom plan together:
                   </label>

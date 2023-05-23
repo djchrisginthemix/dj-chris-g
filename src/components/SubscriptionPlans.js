@@ -76,7 +76,7 @@ const Pricing = () => {
       <div className="max-w-5xl mx-auto px-6">
         <SectionHeading text="Monthly Subscription Plans" color="orange" />
 
-        <div className="tct-packages-grid grid sm:grid-cols-3 gap-2 sm:gap-4">
+        <div className="djcg-packages-grid grid sm:grid-cols-3 gap-2 sm:gap-4">
           {plans.map((plan, index) => (
             <Fade
               delay={plan.delay}
@@ -86,7 +86,7 @@ const Pricing = () => {
               key={index}
             >
               <div
-                className="tct-package bg-white shadow-lg rounded-lg mb-10 lg:mb-0 flex flex-col"
+                className="djcg-package bg-black-mid shadow-lg rounded-lg mb-10 lg:mb-0 flex flex-col"
                 key={index}
               >
                 <div className="flex flex-col items-center justify-center w-full bg-blue-teal p-5 rounded-t-lg min-h-12rem text-center">

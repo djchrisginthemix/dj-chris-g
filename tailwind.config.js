@@ -25,8 +25,11 @@ module.exports = {
     },
     extend: {
       colors: {
+        black: {
+          mid: '#102b4a'
+        },
         blue: {
-          teal: '#20B0A8',
+          teal: '#02d7fc',
           'teal-dark': '#072a28',
         },
         orange: {

@@ -5,7 +5,6 @@ const Navbar = ({ showNav, setShowNav }) => {
 
   const links = [
     { title: "Home", link: "/" },
-    { title: "About", link: "/about" },
     { title: "Services", link: "/services" },
     { title: "Work", link: "/portfolio" },
     { title: "Contact", link: "/contact" },
@@ -21,7 +20,7 @@ const Navbar = ({ showNav, setShowNav }) => {
       {links.map((link) => (
         <a
           key={link.title}
-          className={`block mt-4 md:inline-block md:mt-0 md:mx-4 font-semibold ${activeLink === link.link ? "text-blue-teal" : "text-gray-800"} hover:text-blue-teal`}
+          className={`block mt-4 md:inline-block md:mt-0 md:mx-4 font-semibold ${activeLink === link.link ? "text-blue-teal" : "text-white"} hover:text-blue-teal`}
           href={link.link}
           onClick={() => handleLinkClick(link.link)}
         >

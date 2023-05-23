@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const SEO = ({ title, description, image, url }) => {
-  const siteName = "The Caffeine Team";
+  const siteName = "dj Chris G";
   const siteDescription = "We love websites and everything related!";
   const defaultImage = "/images/default.jpg";
 

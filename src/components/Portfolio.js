@@ -45,7 +45,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio-section" className="bg-white px-6 py-10 sm:py-14 md:py-16 lg:py-20">
+    <section id="portfolio-section" className="bg-black-mid px-6 py-10 sm:py-14 md:py-16 lg:py-20">
       <div className="w-full max-w-7xl mx-auto">
         <SectionHeading text="Portfolio" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl-grid-cols-4 gap-8">

@@ -176,7 +176,7 @@ const ServicesGrid = ({ onSubmit }) => {
       <SectionHeading text="Build the Perfect Plan" />
 
       <form onSubmit={handleSubmit}>
-        <div className="tct-services-grid grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 sm:gap-4 md:gap-12 my-16">
+        <div className="djcg-services-grid grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 sm:gap-4 md:gap-12 my-16">
           {services.map((service) => (
             <ServiceCard
               key={service.title}
@@ -191,10 +191,10 @@ const ServicesGrid = ({ onSubmit }) => {
             />
           ))}
         </div>
-        <div id="tct-services-grid-submission" className="w-full grid grid-cols-1 xs:grid-cols-6 gap-8 mt-14 sm:mt-20">
-        <div id="tct-services-selected-container" className="col-span-6 sm:col-span-4 md:col-span-5">
+        <div id="djcg-services-grid-submission" className="w-full grid grid-cols-1 xs:grid-cols-6 gap-8 mt-14 sm:mt-20">
+        <div id="djcg-services-selected-container" className="col-span-6 sm:col-span-4 md:col-span-5">
           <div className="text-gray-800 text-xl font-bold mb-6 sm:mb-8">Service(s) you selected:</div>
-          <div id="tct-services-selected" className="service-bubbles flex flex-wrap gap-2 justify-left">
+          <div id="djcg-services-selected" className="service-bubbles flex flex-wrap gap-2 justify-left">
               {services
                 .filter(
                   (service) =>
@@ -212,7 +212,7 @@ const ServicesGrid = ({ onSubmit }) => {
                 ))}
               </div>
           </div>
-          <div id="tct-services-submit-container" className="col-span-6 sm:col-span-2 md:col-span-1 xs:flex items-end justify-end">
+          <div id="djcg-services-submit-container" className="col-span-6 sm:col-span-2 md:col-span-1 xs:flex items-end justify-end">
               <input value="Request a Quote" type="submit" className="bg-blue-teal hover:bg-orange-mid text-white text-base md:text-lg font-bold rounded-full transition duration-500 ease-in-out px-10 md:px-14 py-4 shadow-sm" />
           </div>
         </div>
