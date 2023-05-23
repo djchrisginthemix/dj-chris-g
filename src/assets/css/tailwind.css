@@ -5,7 +5,7 @@
 
 body {
   font-size: 16px;
-  @apply bg-black-mid font-body m-0 p-0;
+  @apply bg-black-asphalt font-body m-0 p-0;
 }
 h2.djcg-header-2 {
   @apply font-headline text-4xl sm:text-5xl font-extrabold text-white;

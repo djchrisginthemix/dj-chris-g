@@ -35,7 +35,7 @@ const Header = ({ title, description, image, url }) => {
             <div className="flex justify-between items-center">
               <div className="flex items-center">
                 <a className="hover:opacity-80 duration-500 transition-all ease-in-out" href="/">
-                  <h1 className="djcg-header-1"><img src={djcgLogo} alt="dj Chris G" width={362} height={154} className="w-72 md:w-64"/></h1>
+                  <h1 className="djcg-header-1"><img src={djcgLogo} alt="dj Chris G" width={362} height={154} className="w-52 md:w-48"/></h1>
                 </a>
               </div>
 

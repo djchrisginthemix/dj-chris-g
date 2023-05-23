@@ -1,17 +1,19 @@
 import React from 'react';
 import Contact from '../components/Contact';
-import Testimonials from '../components/Testimonials';
 import Header from '../partials/Header';
+import Testimonials from '../components/Testimonials';
+import FullSlideshow from '../partials/FullSlideshow';
 
 function HomePage() {
   return (
-    <div id="home-page" className="bg-black-mid">
+    <div id="home-page" className="bg-black-asphalt">
        <Header
         title="Home"
-        description="Innovative, High-Performance Web Experiences That Drive Results. We love websites and everything related!"
+        description="Seasoned maestro of dance, electronic, hip-hop, and underground house music, renowned for mesmerizing sets and creating unforgettable atmospheres"
         image="../assets/images/djcg-logo.png"
         url="https://thecaffeineteam.org/"
       />
+      <FullSlideshow />
       <Testimonials />
       <Contact />
     </div>

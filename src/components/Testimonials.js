@@ -1,71 +1,86 @@
-import React from 'react';
+import React from 'react'
 import SectionHeading from './SectionHeading'
-import Reveal from 'react-awesome-reveal';
+import Reveal from 'react-awesome-reveal'
 
 const Testimonials = () => {
   const revealSettings = {
-    from: "bottom",
-    distance: "20px",
-    easing: "cubic-bezier(0.5, 0, 0, 1)",
-    delay: 100,
-  };
+    from: 'bottom',
+    distance: '20px',
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    delay: 100
+  }
   return (
-    <section id="testimonials-section" className="bg-white py-10 sm:py-14 md:py-16 lg:py-20">
-      <div className="mx-auto px-6 max-w-7xl">
-      <SectionHeading text="Testimonials" />
+    <section
+      id='testimonials-section'
+      className='bg-white py-10 sm:py-14 md:py-16 lg:py-20'
+    >
+      <div className='mx-auto px-6 max-w-7xl'>
+        <SectionHeading text='Testimonials' />
         <Reveal triggerOnce {...revealSettings}>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <p className="text-gray-600">
-                "Working with the team at dj Chris G was a great experience. They took the time to understand our business and were able to create a website that exceeded our expectations. The attention to detail and personal touch really made a difference. We couldn't be happier with the end result."
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+            <div className='bg-white rounded-lg shadow-md p-6'>
+              <p className='text-gray-600'>
+                "DJ Chris G's performances at Shine Nightclub at Foxwoods and
+                Mezzos in Middletown, CT were absolutely amazing. Their ability
+                to read the crowd and create an electrifying atmosphere made our
+                events unforgettable. We couldn't have asked for a better DJ for
+                our parties, weddings, and celebrations."
               </p>
-              <div className="flex items-center mt-4">
-                <div className="mr-4">
+              <div className='flex items-center mt-4'>
+                <div className='mr-4'>
                   <img
-                    src="https://randomuser.me/api/portraits/women/22.jpg"
-                    alt=""
-                    className="rounded-full w-12 h-12"
+                    src='https://randomuser.me/api/portraits/women/22.jpg'
+                    alt=''
+                    className='rounded-full w-12 h-12'
                   />
                 </div>
                 <div>
-                  <p className="text-gray-800 font-bold">Sarah Johnson</p>
-                  <p className="text-gray-600">Owner, Johnson's Bakery</p>
+                  <p className='text-gray-800 font-bold'>Sarah Johnson</p>
+                  <p className='text-gray-600'>Event Organizer</p>
                 </div>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <p className="text-gray-600">
-                "I was hesitant to redesign my website, but the team at dj Chris G made the process seamless. They were able to modernize my site and optimize it for search engines, which has resulted in more traffic and leads. Their communication and expertise were top-notch. Highly recommend!"
+            <div className='bg-white rounded-lg shadow-md p-6'>
+              <p className='text-gray-600'>
+                "We hired DJ Chris G for our wedding, and they exceeded our
+                expectations. Their music selection and seamless mixing kept the
+                dance floor packed all night long. Our guests had a blast, and
+                we received numerous compliments about the fantastic DJ. DJ
+                Chris G truly knows how to make any celebration unforgettable."
               </p>
-              <div className="flex items-center mt-4">
-                <div className="mr-4">
+              <div className='flex items-center mt-4'>
+                <div className='mr-4'>
                   <img
-                    src="https://randomuser.me/api/portraits/men/38.jpg"
-                    alt=""
-                    className="rounded-full w-12 h-12"
+                    src='https://randomuser.me/api/portraits/men/38.jpg'
+                    alt=''
+                    className='rounded-full w-12 h-12'
                   />
                 </div>
                 <div>
-                  <p className="text-gray-800 font-bold">Tom Anderson</p>
-                  <p className="text-gray-600">Owner, Anderson Construction</p>
+                  <p className='text-gray-800 font-bold'>Tom Anderson</p>
+                  <p className='text-gray-600'>Happy Client</p>
                 </div>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <p className="text-gray-600">
-                "I had a great experience working with dj Chris G. From the initial consultation to the final launch, they were professional, responsive, and accommodating. They really went above and beyond to make sure my website was perfect. I couldn't be happier with the outcome."
+            <div className='bg-white rounded-lg shadow-md p-6'>
+              <p className='text-gray-600'>
+                "DJ Chris G's performance at our corporate party was phenomenal.
+                They had a deep understanding of our event's vibe and kept the
+                energy high throughout the night. The dance floor was packed,
+                and our employees had a blast. DJ Chris G is an incredibly
+                talented DJ who knows how to create a memorable experience."
               </p>
-              <div className="flex items-center mt-4">
-                <div className="mr-4">
+              <div className='flex items-center mt-4'>
+                <div className='mr-4'>
                   <img
-                    src="https://randomuser.me/api/portraits/women/72.jpg"
-                    alt=""
-                    className="rounded-full w-12 h-12"
+                    src='https://randomuser.me/api/portraits/women/72.jpg'
+                    alt=''
+                    className='rounded-full w-12 h-12'
                   />
                 </div>
                 <div>
-                  <p className="text-gray-800 font-bold">Jessica Davis</p>
-                  <p className="text-gray-600">Owner, Jess's Bakery</p>
+                  <p className='text-gray-800 font-bold'>Jessica Davis</p>
+                  <p className='text-gray-600'>Event Coordinator</p>
                 </div>
               </div>
             </div>
@@ -73,6 +88,6 @@ const Testimonials = () => {
         </Reveal>
       </div>
     </section>
-  );
-};
-export default Testimonials;
+  )
+}
+export default Testimonials

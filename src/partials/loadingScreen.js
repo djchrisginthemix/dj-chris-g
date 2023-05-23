@@ -75,7 +75,7 @@ const LoadingScreen = () => {
             ))}
           </div>
           <div
-            className='bg-black-mid opacity-60 absolute inset-0'
+            className='bg-black-asphalt opacity-60 absolute inset-0'
             style={{ zIndex: 1 }}
           ></div>
         </div>

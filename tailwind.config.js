@@ -74,6 +74,7 @@ module.exports = {
       maxHeight: {
         '1/2': '50%',
         '3/4': '75%',
+        '50vh': '50vh'
       },
       minWidth: {
         '3/4': '75%',
