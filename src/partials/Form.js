@@ -202,22 +202,6 @@ console.log(initialValues)
       .required('Message is required')
       .min(100, 'Message must be at least 100 characters long')
       .max(1000, 'Message must be at most 1000 characters long')
-    // subscriptions: Yup.array().test(
-    //   'one-required',
-    //   'Please select at least one option from subscriptions or services',
-    //   function (value) {
-    //     const services = this.parent.services;
-    //     return (value && value.length > 0) || (services && services.length > 0);
-    //   }
-    // ),
-    // services: Yup.array().test(
-    //   'one-required',
-    //   'Please select at least one option from subscriptions or services',
-    //   function (value) {
-    //     const subscriptions = this.parent.subscriptions;
-    //     return (value && value.length > 0) || (subscriptions && subscriptions.length > 0);
-    //   }
-    // ),
   })
 
   const handleServiceChange = selectedServices => {

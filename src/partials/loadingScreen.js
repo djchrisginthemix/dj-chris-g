@@ -1,14 +1,22 @@
 import React, { useState, useEffect, useMemo } from 'react'
+import djcgLogo from '../assets/images/djcg-logo.png';
 import '../assets/css/tct-loading-screen.css'
-import slideBG1 from '../assets/images/webp/slideBG1.webp'
-import slideBG2 from '../assets/images/webp/slideBG2.webp'
-import slideBG3 from '../assets/images/webp/slideBG3.webp'
-import slideBG4 from '../assets/images/webp/slideBG4.webp'
-import slideBG5 from '../assets/images/webp/slideBG5.webp'
+import loading1 from '../assets/images/loading/loading1.jpg'
+import loading2 from '../assets/images/loading/loading2.jpg'
+import loading3 from '../assets/images/loading/loading3.jpg'
+import loading4 from '../assets/images/loading/loading4.jpg'
+import loading5 from '../assets/images/loading/loading5.jpg'
+import loading6 from '../assets/images/loading/loading6.jpg'
+import loading7 from '../assets/images/loading/loading7.jpg'
+import loading8 from '../assets/images/loading/loading8.jpg'
+import loading9 from '../assets/images/loading/loading9.jpg'
+import loading10 from '../assets/images/loading/loading10.jpg'
+import loading11 from '../assets/images/loading/loading11.jpg'
+import loading12 from '../assets/images/loading/loading12.jpg'
 
 const LoadingScreen = () => {
   const slideUrls = useMemo(
-    () => [slideBG1, slideBG2, slideBG3, slideBG4, slideBG5],
+    () => [loading1, loading2, loading3, loading4, loading5, loading6, loading7, loading8, loading9, loading10, loading11, loading12],
     []
   )
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -44,7 +52,7 @@ const LoadingScreen = () => {
     if (isImagesLoaded) {
       const interval = setInterval(() => {
         setCurrentImageIndex(prevIndex => (prevIndex + 1) % slideUrls.length)
-      }, 2000)
+      }, 200)
 
       return () => {
         clearInterval(interval) // Clean up the interval when the component unmounts
@@ -54,7 +62,7 @@ const LoadingScreen = () => {
 
   return (
     <div
-      id='caffeine-team-loading-screen'
+      id='djcg-loading-screen'
       className='bg-beige-light w-full h-screen flex items-start justify-center overflow-hidden'
     >
       {isImagesLoaded && (
@@ -80,7 +88,8 @@ const LoadingScreen = () => {
           ></div>
         </div>
       )}
-      <div className='container relative z-10'>
+      <div className='w-full h-full flex justify-center items-center z-10'>
+      <img src={djcgLogo} alt="dj Chris G" width={362} height={154} className="w-72 drop-shadow-custom" />
 
       </div>
     </div>

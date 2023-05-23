@@ -1,9 +1,10 @@
-import React from 'react';
+import React from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { ParallaxProvider } from 'react-scroll-parallax'
-import djcgSlide1 from '../assets/images/djcgSlide1.png'
+import djcgSlide1 from '../assets/images/djcgSlide1.jpg'
+import djcgSlide2 from '../assets/images/djcgSlide2.jpg'
+import djcgSlide3 from '../assets/images/djcgSlide3.jpg'
 
 const slides = [
   {
@@ -11,50 +12,45 @@ const slides = [
     alt: 'Slide 1'
   },
   {
-    image: 'https://via.placeholder.com/1200x800?text=Slide+2',
+    image: djcgSlide2,
     alt: 'Slide 2'
   },
   {
-    image: 'https://via.placeholder.com/1200x800?text=Slide+3',
+    image: djcgSlide3,
     alt: 'Slide 3'
   }
 ]
 
 const FullSlideshow = () => {
   const settings = {
-    dots: true,
+    dots: false,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    fade: true
+    fade: true,
+    cssEase: 'linear'
   }
 
-
   return (
-      <ParallaxProvider scrollAxis="vertical">
-      <div className='djcg-slideshow w-screen h-screen'>
-          <div className='parallax-container'>
-            <Slider {...settings}>
-              {slides.map((slide, index) => (
-                <div key={index} className='slide'>
-                  <div
-                    className='parallax-slide'
-                  >
-                    <img
-                      src={slide.image}
-                      alt={slide.alt}
-                      className='w-full h-full object-cover'
-                    />
-                  </div>
-                </div>
-              ))}
-            </Slider>
+    <div className='djcg-slideshow w-full h-full max-h-50vh'>
+      <Slider {...settings}>
+        {slides.map((slide, index) => (
+          <div key={index} className='slide'>
+            <div className='slide'>
+              <img
+                src={slide.image}
+                alt={slide.alt}
+                className='w-full h-full object-cover overflow-hidden cursor-none'
+              />
+            </div>
           </div>
-      </div>
-    </ParallaxProvider>
+        ))}
+      </Slider>
+    </div>
   )
 }
 

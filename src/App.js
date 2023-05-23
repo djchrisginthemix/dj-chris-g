@@ -25,12 +25,12 @@ function App() {
     if (hasVisited === 'true') {
       setTimeout(() => {
         setShowLoading(false);
-      }, 1500); // Set the timeout to 2 seconds
+      }, 2500); // Set the timeout to 2.5 seconds
     } else {
       setTimeout(() => {
         setShowLoading(false);
         localStorage.setItem('hasVisited', 'true');
-      }, 7000); // Set the timeout to 10 seconds for the first visit
+      }, 5000); // Set the timeout to 5 seconds for the first visit
     }
   }, []);
   

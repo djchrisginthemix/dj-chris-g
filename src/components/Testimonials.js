@@ -12,7 +12,7 @@ const Testimonials = () => {
   return (
     <section
       id='testimonials-section'
-      className='bg-white py-10 sm:py-14 md:py-16 lg:py-20'
+      className='py-10 sm:py-14 md:py-16 lg:py-20'
     >
       <div className='mx-auto px-6 max-w-7xl'>
         <SectionHeading text='Testimonials' />

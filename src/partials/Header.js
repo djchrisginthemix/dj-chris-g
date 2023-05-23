@@ -30,12 +30,12 @@ const Header = ({ title, description, image, url }) => {
     <Zoom triggerOnce {...zoomSettings}>
       <header className="">
         <SEO title={title} description={description} image={image} url={url} />
-        <div className="w-full max-w-8xl mx-auto pl-2 pr-4 sm:px-6 py-3">
-          <div className="flex flex-col md:justify-between md:items-center">
+        <div className="w-full max-w-8xl mx-auto pl-2 pr-4 sm:px-6 py-3 sm:py-6">
+          <div className="flex flex-col gap-4 md:justify-between md:items-center">
             <div className="flex justify-between items-center">
               <div className="flex items-center">
                 <a className="hover:opacity-80 duration-500 transition-all ease-in-out" href="/">
-                  <h1 className="djcg-header-1"><img src={djcgLogo} alt="dj Chris G" width={362} height={154} className="w-52 md:w-48"/></h1>
+                 <img src={djcgLogo} alt="dj Chris G" width={362} height={154} className="w-52 md:w-48"/>
                 </a>
               </div>
 

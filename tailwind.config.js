@@ -31,6 +31,7 @@ module.exports = {
         },
         blue: {
           ice: '#02d7fc',
+          'ice-trans': 'rgba(2, 215, 252, 0.5)',
           meth: '#102b4a',
         },
         pink: {
@@ -61,6 +62,8 @@ module.exports = {
 
       height: {
         '1/3': '33vh',
+        '1/2': '50vh',
+        '3/4': '75vh',
     },
 
       maxWidth: {
