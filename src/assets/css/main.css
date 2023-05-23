@@ -571,9 +571,6 @@ video {
 .order-3 {
   order: 3;
 }
-.order-4 {
-  order: 4;
-}
 .col-span-6 {
   grid-column: span 6 / span 6;
 }
@@ -618,9 +615,6 @@ video {
 }
 .mt-0 {
   margin-top: 0px;
-}
-.mt-12 {
-  margin-top: 3rem;
 }
 .mt-14 {
   margin-top: 3.5rem;
@@ -1258,16 +1252,8 @@ textarea[name="message"]:invalid {
     margin-bottom: 2rem;
   }
 
-  .sm\:mt-16 {
-    margin-top: 4rem;
-  }
-
   .sm\:mt-20 {
     margin-top: 5rem;
-  }
-
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:items-end {
@@ -1438,10 +1424,6 @@ textarea[name="message"]:invalid {
     gap: 4rem;
   }
 
-  .md\:gap-4 {
-    gap: 1rem;
-  }
-
   .md\:gap-6 {
     gap: 1.5rem;
   }
@@ -1513,10 +1495,6 @@ textarea[name="message"]:invalid {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:gap-20 {
