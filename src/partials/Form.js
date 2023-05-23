@@ -6,49 +6,46 @@ import { useLocation, useNavigate } from 'react-router-dom'
 
 import Button from '../components/Button'
 
-const ServiceInput = ({ name, selectedServices, onChange }) => {
+const VibeInput = ({ name, selectedVibes, onChange }) => {
   const location = useLocation()
   const queryParams = new URLSearchParams(location.search)
-  const servicesString = queryParams.get('services')
-  const services = servicesString
-    ? servicesString.split(', ')
+  const vibesString = queryParams.get('music')
+  const vibes = vibesString
+    ? vibesString.split(', ')
     : [
-        'Web Design',
-        'Mobile Development',
-        'Front-end Development',
-        'Search Engine Optimization',
-        'E-commerce Development',
-        'Analytics and Reporting',
-        'Content Creation',
-        'Graphic Design',
-        'UX/UI Design',
-        'Web Hosting',
-        'Website Security',
-        'Social Media Marketing'
+        'Electronic',
+        'Hip Hop',
+        'Pop',
+        'Top 40',
+        'Retro',
+        'House',
+        'Chillout',
+        'Latin',
+        'Party Mix',
       ]
 
 
   const handleChange = event => {
     const { value, checked } = event.target
     if (checked) {
-      onChange([...selectedServices, value])
+      onChange([...selectedVibes, value])
     } else {
-      onChange(selectedServices.filter(service => service !== value))
+      onChange(selectedVibes.filter(vibe => vibe !== value))
     }
   }
 
   return (
-    <div id='services-selected-list' className='flex gap-4 flex-wrap'>
-      {services.map(service => {
+    <div id='vibes-selected-list' className='flex gap-4 flex-wrap'>
+      {vibes.map(vibe => {
         function hasValue () {
-          return servicesString ? true : false
+          return vibesString ? true : false
         }
 
-        const isChecked = hasValue() || selectedServices.includes(service)
+        const isChecked = hasValue() || selectedVibes.includes(vibe)
         return (
-          <div key={service} className='flex items-center'>
+          <div key={vibe} className='flex items-center'>
             <label
-              htmlFor={`${service.trim().replace(/\s+/g, '-').toLowerCase()}`}
+              htmlFor={`${vibe.trim().replace(/\s+/g, '-').toLowerCase()}`}
               className={`inline-flex items-center px-4 py-2 font-medium rounded-full cursor-pointer transition duration-500 ease-in-out ${
                 isChecked
                   ? 'bg-orange-mid opacity-100 text-gray-800'
@@ -56,15 +53,15 @@ const ServiceInput = ({ name, selectedServices, onChange }) => {
               }`}
             >
               <Field
-                id={`${service.trim().replace(/\s+/g, '-').toLowerCase()}`}
+                id={`${vibe.trim().replace(/\s+/g, '-').toLowerCase()}`}
                 name={name}
                 type='checkbox'
-                value={service}
+                value={vibe}
                 checked={isChecked}
                 onChange={handleChange}
                 className='hidden'
               />
-              <span className='ml-2'>{service}</span>
+              <span className='ml-2'>{vibe}</span>
             </label>
           </div>
         )
@@ -73,79 +70,15 @@ const ServiceInput = ({ name, selectedServices, onChange }) => {
   )
 }
 
-const SubscriptionInput = ({ name, selectedSubscriptions, onChange }) => {
-  const location = useLocation()
-  const queryParams = new URLSearchParams(location.search)
-  const subscriptionsString = queryParams.get('plan')
-  
-  const subscriptions = subscriptionsString
-    ? subscriptionsString.split(', ')
-    : ['Basic', 'Standard', 'Premium']
-
-  const handleChange = event => {
-    const { value, checked } = event.target
-    if (checked) {
-      onChange([...selectedSubscriptions, value])
-    } else {
-      onChange(
-        selectedSubscriptions.filter(subscription => subscription !== value)
-      )
-    }
-  }
-
-  return (
-    <div id='subscriptions-selected-list' className='flex flex-wrap gap-4'>
-      {subscriptions.map(subscription => {
-        function hasValue () {
-          return subscriptionsString ? true : false
-        }
-
-        const isChecked =
-          hasValue() || selectedSubscriptions.includes(subscription)
-        return (
-          <div key={subscription} className='flex items-center'>
-            <label
-              htmlFor={`${subscription
-                .trim()
-                .replace(/\s+/g, '-')
-                .toLowerCase()}`}
-              className={`inline-flex items-center px-4 py-2 font-medium rounded-full cursor-pointer transition duration-500 ease-in-out ${
-                isChecked
-                  ? 'bg-orange-mid opacity-100 text-gray-800'
-                  : 'bg-gray-200 text-gray-500 opacity-50'
-              }`}
-            >
-              <Field
-                id={`${subscription.trim().replace(/\s+/g, '-').toLowerCase()}`}
-                name={name}
-                type='checkbox'
-                value={subscription}
-                checked={isChecked}
-                onChange={handleChange}
-                className='hidden'
-              />
-              <span className='ml-2'>{subscription}</span>
-            </label>
-          </div>
-        )
-      })}
-    </div>
-  )
-}
 
 const FormComponent = ({
   color = 'white',
   selectedTitles = [],
-  subscriptionPlan = []
 }) => {
   const location = useLocation();
   const navigate = useNavigate();
-
-  const servicesStringRef = new URLSearchParams(location.search).get('services');
-  const subscriptionsStringRef = new URLSearchParams(location.search).get('plan');
-
-  const [services, setServices] = useState(selectedTitles)
-  const [subscriptions, setSubscriptions] = useState(subscriptionPlan)
+  const vibesStringRef = new URLSearchParams(location.search).get('music');
+  const [vibes, setVibes] = useState(selectedTitles)
   const [resetKey, setResetKey] = useState(0)
 
 
@@ -170,8 +103,7 @@ const FormComponent = ({
     email: '',
     phone: '',
     message: '',
-    services: servicesStringRef ? servicesStringRef.split(', ') : [],
-    subscriptions: subscriptionsStringRef ? subscriptionsStringRef.split(', ') : []
+    vibes: vibesStringRef ? vibesStringRef.split(', ') : [],
   };
 console.log(initialValues)
 
@@ -204,16 +136,12 @@ console.log(initialValues)
       .max(1000, 'Message must be at most 1000 characters long')
   })
 
-  const handleServiceChange = selectedServices => {
-    setServices(selectedServices)
+  const handleVibeChange = selectedVibes => {
+    setVibes(selectedVibes)
   }
 
-  const handleSubscriptionChange = selectedSubscriptions => {
-    setSubscriptions(selectedSubscriptions)
-  }
   const handleReset = formik => {
-    setServices(selectedTitles)
-    setSubscriptions(subscriptionPlan)
+    setVibes(selectedTitles)
     formik.resetForm({}, false)
     setResetKey(prevKey => prevKey + 1)
   }
@@ -228,12 +156,8 @@ console.log(initialValues)
   }
 
   const handleSubmit = (values, actions) => {
-    if (!servicesStringRef || servicesStringRef.length === 0) {
-      values.services = services;
-    }
-  
-    if (!subscriptionsStringRef || subscriptionsStringRef.length === 0) {
-      values.subscriptions = subscriptions;
+    if (!vibesStringRef || vibesStringRef.length === 0) {
+      values.vibes = vibes;
     }
 
     fetch('/', {
@@ -382,40 +306,21 @@ console.log(initialValues)
                 </div>
               </div>
               <div className='djcg-contact-right-col flex flex-col flex-1 justify-between'>
-                <div className='field subscription-group mb-6 md:mb-8'>
+                <div className='field vibes-group mb-4 md:mb-5'>
                   <label
-                    htmlFor='subscriptions'
+                    htmlFor='vibes'
                     className={`djcg-label block text-lg sm:text-base md:text-lg ${colorClasses[color]} mb-5`}
                   >
-                    Find a subscription that's right for you:
+                    Set the vibe of your event:
                   </label>
-                  <SubscriptionInput
-                    id='subscriptions'
-                    name='subscriptions'
-                    selectedSubscriptions={subscriptions}
-                    onChange={handleSubscriptionChange}
+                  <VibeInput
+                    id='vibes'
+                    name='vibes'
+                    selectedVibes={vibes}
+                    onChange={handleVibeChange}
                   />
                   <ErrorMessage
-                    name='subscriptions'
-                    component='div'
-                    className='text-red-500 font-semibold text-xs p-2 rounded-b-md'
-                  />
-                </div>
-                <div className='field services-group mb-4 md:mb-5'>
-                  <label
-                    htmlFor='services'
-                    className={`djcg-label block text-lg sm:text-base md:text-lg ${colorClasses[color]} mb-5`}
-                  >
-                    or let's build a custom plan together:
-                  </label>
-                  <ServiceInput
-                    id='services'
-                    name='services'
-                    selectedServices={services}
-                    onChange={handleServiceChange}
-                  />
-                  <ErrorMessage
-                    name='services'
+                    name='vibes'
                     component='div'
                     className='text-red-500 font-semibold text-xs p-2 rounded-b-md'
                   />

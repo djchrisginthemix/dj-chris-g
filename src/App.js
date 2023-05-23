@@ -6,13 +6,13 @@ import ScrollToTopOnload from './partials/ScrollToTopOnload';
 import LoadingScreen from './partials/loadingScreen';
 import Footer from './partials/Footer';
 import Homepage from './pages/Home';
-import Services from './pages/Services';
+import Requests from './pages/Requests';
 import Events from './pages/Events';
 import Contact from './pages/Contact';
 import Thankyou from './pages/Thankyou';
 
 const HomepageWithLoading = withLoading(Homepage);
-const ServicesWithLoading = withLoading(Services);
+const RequestsWithLoading = withLoading(Requests);
 const EventsWithLoading = withLoading(Events);
 const ContactWithLoading = withLoading(Contact);
 const ThankyouWithLoading = withLoading(Thankyou);
@@ -44,7 +44,7 @@ function App() {
           <ScrollToTopOnload />
           <Routes>
             <Route exact path="/" element={<HomepageWithLoading />} />
-            <Route path="/services" element={<ServicesWithLoading />} />
+            <Route path="/requests" element={<RequestsWithLoading />} />
             <Route path="/events" element={<EventsWithLoading />} />
             <Route path="/contact" element={<ContactWithLoading />} />
             <Route path="/thank-you" element={<ThankyouWithLoading />} />

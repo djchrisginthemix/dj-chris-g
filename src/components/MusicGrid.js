@@ -15,11 +15,11 @@ import {
   FaHippo
 } from 'react-icons/fa';
 
-const GenreCard = ({ icon, title, description, delay, selected, onChange }) => {
+const MusicCard = ({ icon, title, description, delay, selected, onChange }) => {
   return (
     <Fade delay={delay} duration={400} offset={0} animateIn='fadeIn'>
       <div
-        className={`ct-genre flex flex-col items-center justify-start text-left ${
+        className={`ct-vibe flex flex-col items-center justify-start text-left ${
           selected ? 'selected' : ''
         }`}
         onClick={onChange}
@@ -52,8 +52,8 @@ const GenreCard = ({ icon, title, description, delay, selected, onChange }) => {
   );
 };
 
-const GenresGrid = ({ onSubmit }) => {
-  const genres = [
+const MusicGrid = ({ onSubmit }) => {
+  const music = [
     {
       icon: <FaMusic />,
       title: 'Electronic',
@@ -119,81 +119,81 @@ const GenresGrid = ({ onSubmit }) => {
     }
   ];
 
-  const [selectedGenres, setSelectedGenres] = useState([]);
+  const [selectedMusic, setSelectedMusic] = useState([]);
   const navigate = useNavigate();
 
-  const handleSelectGenre = genre => {
-    setSelectedGenres(prevSelectedGenres => {
-      const alreadySelected = prevSelectedGenres.some(
-        g => g.title === genre.title
+  const handleSelectVibe = vibe => {
+    setSelectedMusic(prevSelectedMusic => {
+      const alreadySelected = prevSelectedMusic.some(
+        g => g.title === vibe.title
       );
       if (alreadySelected) {
-        return prevSelectedGenres.filter(g => g.title !== genre.title);
+        return prevSelectedMusic.filter(g => g.title !== vibe.title);
       }
-      return [...prevSelectedGenres, genre];
+      return [...prevSelectedMusic, vibe];
     });
   };
 
   const handleSubmit = event => {
     event.preventDefault();
-    const selectedGenreTitles = selectedGenres.map(genre => genre.title);
-    navigate(`/contact?genres=${selectedGenreTitles.join(', ')}`);
+    const selectedVibeTitles = selectedMusic.map(vibe => vibe.title);
+    navigate(`/contact?music=${selectedVibeTitles.join(', ')}`);
   };
 
   return (
     <section
-      id='genres-grid-section'
+      id='music-grid-section'
       className='w-full max-w-7xl mx-auto py-20 px-6'
     >
-      <SectionHeading text='Explore Music Genres' />
+      <SectionHeading text='Be provocative… get the people going!' />
       <form onSubmit={handleSubmit}>
-        <div className='djcg-genres-grid grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 sm:gap-4 md:gap-12 my-16'>
-          {genres.map(genre => (
-            <GenreCard
-              key={genre.title}
-              icon={genre.icon}
-              title={genre.title}
-              description={genre.description}
-              delay={genre.delay}
-              selected={selectedGenres.some(g => g.title === genre.title)}
-              onChange={() => handleSelectGenre(genre)}
+        <div className='djcg-music-grid grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 sm:gap-4 md:gap-12 my-16'>
+          {music.map(vibe => (
+            <MusicCard
+              key={vibe.title}
+              icon={vibe.icon}
+              title={vibe.title}
+              description={vibe.description}
+              delay={vibe.delay}
+              selected={selectedMusic.some(g => g.title === vibe.title)}
+              onChange={() => handleSelectVibe(vibe)}
             />
           ))}
         </div>
         <div
-          id='djcg-genres-grid-submission'
+          id='djcg-music-grid-submission'
           className='w-full grid grid-cols-1 xs:grid-cols-6 gap-8 mt-14 sm:mt-20'
         >
           <div
-            id='djcg-genres-selected-container'
+            id='djcg-music-selected-container'
             className='col-span-6 sm:col-span-4 md:col-span-5'
           >
             <div className='text-gray-800 text-xl font-bold mb-6 sm:mb-8'>
-              Genres you selected:
+              Music you selected:
             </div>
             <div
-              id='djcg-genres-selected'
-              className='genre-bubbles flex flex-wrap gap-2 justify-left'
+              id='djcg-music-selected'
+              className='vibe-bubbles flex flex-wrap gap-2 justify-left'
             >
-              {genres
+              {music
                 .filter(
-                  genre =>
-                    selectedGenres.findIndex(g => g.title === genre.title) !==
+                  vibe =>
+                    selectedMusic.findIndex(g => g.title === vibe.title) !==
                     -1
                 )
-                .map((genre, index) => (
+                .map((vibe, index) => (
                   <div
-                    key={genre.title}
-                    className='genre-bubble selected rounded-full bg-pink-mid text-white font-bold text-xs sm:text-sm py-3 px-4 sm:px-6'
+                    key={vibe.title}
+                    className='vibe-bubble selected rounded-full bg-pink-mid text-white font-bold text-xs sm:text-sm py-3 px-4 sm:px-6'
                     style={{ animationDelay: `${index * 50}ms` }}
                   >
-                    {genre.title}
+                    {vibe.title}
                   </div>
                 ))}
             </div>
           </div>
           <div
-            id='djcg-genres-submit-container'
+            id='djcg-music-submit-container'
             className='col-span-6 sm:col-span-2 md:col-span-1 xs:flex items-end justify-end'
           >
             <input
@@ -208,4 +208,4 @@ const GenresGrid = ({ onSubmit }) => {
   );
 };
 
-export default GenresGrid;
+export default MusicGrid;

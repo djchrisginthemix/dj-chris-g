@@ -1449,11 +1449,6 @@ textarea[name="message"]:invalid {
     border-style: none;
   }
 
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;

@@ -5,7 +5,7 @@ const Navbar = ({ showNav, setShowNav }) => {
 
   const links = [
     { title: "Home", link: "/" },
-    { title: "Services", link: "/services" },
+    { title: "Requests", link: "/requests" },
     { title: "Events", link: "/events" },
     { title: "Contact", link: "/contact" },
   ];

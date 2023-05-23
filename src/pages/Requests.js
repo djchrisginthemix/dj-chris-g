@@ -1,20 +1,20 @@
 import React from 'react'
-import ServicesGrid from '../components/ServiceGrid'
+import MusicGrid from '../components/MusicGrid'
 import Header from '../partials/Header'
 
-const Services = () => {
+const Requests = () => {
   return (
-    <div id='services-page' className='bg-black-asphalt'>
+    <div id='requests-page' className='bg-black-asphalt'>
       <Header
-        title='Our Plans and Services'
+        title='Make Requests'
         description='Seasoned maestro of dance, electronic, hip-hop, and underground house music, renowned for mesmerizing sets and creating unforgettable atmospheres'
         image='../assets/images/djcg-logo.png'
-        url='https://thecaffeineteam.org/services'
+        url='https://thecaffeineteam.org/requests'
       />
       <div className='max-w-7xl mx-auto px-6 sm:py-14 md:py-16 lg:py-20'>
         <div className='flex flex-col items-center'>
           <h2 className='djcg-header-2 text-center mt-8 mb-10 sm:mb-12'>
-            Services Provided By dj Chris G
+            Request a Vibe by dj Chris G
           </h2>
           <div className='text-gray-600 text-center sm:text-left max-w-5xl mx-auto'>
             <p className='text-base sm:text-lg text-center text-gray-500 mb-4'>
@@ -56,8 +56,8 @@ const Services = () => {
         </div>
       </div>
       <hr className='my-10' />
-      <ServicesGrid />
+      <MusicGrid />
     </div>
-  )
-}
-export default Services
+  );
+};
+export default Requests;
