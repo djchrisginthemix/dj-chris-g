@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-size: 16px;
+  @apply font-body m-0 p-0;
+}
+h2.tct-header-2 {
+  @apply font-headline text-4xl sm:text-5xl font-extrabold text-gray-800;
+}
+h3.tct-header-3 {
+  @apply font-headline text-2xl sm:text-3xl font-bold mb-5;
+}
+h3.tct-header-4 {
+  @apply font-headline text-xl sm:text-2xl font-semibold mb-4;
+}
+label.tct-label {
+  @apply font-bold;
+}
+input.tct-input, select.tct-select, textarea.tct-textarea {
+  @apply bg-white text-base p-2;
+}
+textarea[name="message"]:invalid {
+  border-color: inherit;
+  box-shadow: none;
+}
+.tct-icon:hover {
+  @apply text-orange-mid;
+}
+.slick-dots.custom-dots {
+  @apply relative bottom-0;
+}
+.slick-dots.custom-dots li, .slick-dots.custom-dots li button, .slick-dots.custom-dots li button:before {
+  @apply w-6 h-6;
+}
+.slick-dots.custom-dots li button:before {
+  @apply text-base;
+}
+.slick-arrow.slick-next,
+.slick-arrow.slick-prev {
+  @apply text-blue-teal-dark transition duration-500 ease-in-out;
+  width: 2rem;
+  height: 2rem;
+  z-index: 10;
+}
+.slick-arrow.slick-next:hover,
+.slick-arrow.slick-prev:hover {
+  @apply text-blue-teal;
+}
+@media (max-width: 767px) {
+  .slick-slider {
+    overflow: hidden;
+  }
+  .slick-arrow.slick-prev {
+    left: -4px;
+  }
+  .slick-arrow.slick-next {
+    right: -4px;
+  }
+}
+@media (max-width: 640px) {
+  .slick-arrow.slick-prev {
+    left: -3px;
+  }
+  .slick-arrow.slick-next {
+    right: -3px;
+  }
+}
+
