@@ -100,16 +100,16 @@ const Footer = () => {
             <div className='flex flex-col'>
               <h4 className='text-base font-bold mb-2'>dj Chris G</h4>
               <a
-                href='tel:845-558-5493'
+                href='tel:860-899-7867'
                 className='mr-4 hover:underline hover:text-blue-ice text-lg transition duration-500 ease-in-out'
               >
-                ###-###-####
+                860-899-7867
               </a>
               <a
-                href='mailto:help@thecaffeineteam.org'
+                href='mailto:djchrisgmgmt@gmail.com'
                 className='hover:underline hover:text-blue-ice text-lg transition duration-500 ease-in-out'
               >
-                djchrisg@gmail.com
+                djchrisgmgmt@gmail.com
               </a>
             </div>
           </div>
