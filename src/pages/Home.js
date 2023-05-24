@@ -5,9 +5,9 @@ import LinktreeSubscribe from '../components/LinktreeSubscribe'
 import Header from '../partials/Header'
 import Testimonials from '../components/Testimonials'
 import FullSlideshow from '../partials/FullSlideshow'
-import loading1 from '../assets/images/loading/loading1.jpg'
-import loading2 from '../assets/images/loading/loading2.jpg'
+import testimonialsBG from '../assets/images/testimonials-bg.jpg'
 import contactBG from '../assets/images/contact-bg.jpg'
+import loading2 from '../assets/images/loading/loading2.jpg'
 
 function HomePage () {
   const insideStyles = {
@@ -16,9 +16,9 @@ function HomePage () {
     transform: 'translate(-50%,-50%)'
   }
 
-  const image1 = loading1
-  const image2 = contactBG
-  const image3 = loading2
+  const image1 = testimonialsBG;
+  const image2 = contactBG;
+  const image3 = loading2;
 
   return (
     <div id='home-page' className='bg-black-asphalt'>
@@ -56,10 +56,18 @@ function HomePage () {
             style={insideStyles}
           >
             <h1 className='djcg-header-1 flex flex-col md:flex-row gap-8 md:gap-16 justify-center items-center'>
-              <span>Welcome to the sick, twisted world of DJ Chris G</span>{' '}
-              <em className='font-light'>#inthemix</em>
+              <div>Welcome to the sick, twisted mind of <span className="text-blue-ice">DJ Chris G</span></div>{' '}
+              <a
+                title='#inthemix with DJ Chris G'
+                target='_blank'
+                rel="noreferrer"
+                className='text-pink-mid hover:text-blue-ice transition duration-500 ease-in-out'
+                href='https://z-p42.www.instagram.com/explore/tags/inthemix/'
+              >
+                <em className='font-light'>#inthemix</em>
+              </a>
             </h1>
-            <div class='flex flex-col md:flex-row justify-between gap-8 md:gap-16 md:ml-20'>
+            <div class='flex flex-col md:flex-row justify-between gap-8 md:gap-16 md:ml-20 mt-14 md:mt-0'>
               <p className='text-base md:text-2xl'>
                 <em>Resident DJ @ Mezzo Grille Fridays</em>
               </p>
@@ -72,7 +80,7 @@ function HomePage () {
       </Parallax>
 
       <Parallax bgImage={image1} blur={{ min: 10, max: -10 }}>
-        <div className='min-h-screen h-full md:h-3/4 shadow-inner'>
+        <div className='min-h-200vh h-full md:h-3/4 shadow-inner'>
           <div
             id='testimonials-container'
             className='absolute w-full max-w-7xl mx-auto'
@@ -83,7 +91,7 @@ function HomePage () {
         </div>
       </Parallax>
       <Parallax bgImage={image2} strength={-500}>
-        <div className='bg-black-solid shadow-md min-h-screen h-full md:h-screen'>
+        <div className='bg-black-solid shadow-md min-h-150vh h-full md:h-screen'>
           <div
             id='contact-container'
             className='absolute w-full'
@@ -97,9 +105,9 @@ function HomePage () {
         bgImage={image3}
         strength={200}
         renderLayer={percentage => (
-          <div className="h-1/2 shadow-inner">
+          <div className='h-1/2 shadow-inner'>
             <div
-            className='relative'
+              className='relative'
               style={{
                 position: 'absolute',
                 background: `rgba(255, 125, 0, ${percentage * 1})`,
@@ -111,12 +119,12 @@ function HomePage () {
                 height: percentage * 500
               }}
             />
-                       <div
-            className='flex w-full justify-center items-center h-1/2'><LinktreeSubscribe /></div>
+            <div className='flex w-full justify-center items-center h-1/2'>
+              <LinktreeSubscribe />
+            </div>
           </div>
         )}
-      >
-      </Parallax>
+      ></Parallax>
     </div>
   )
 }

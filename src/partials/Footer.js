@@ -37,7 +37,7 @@ const Footer = () => {
             <div className='text-orange-mid text-left text-lg sm:text-xl uppercase font-bold mb-4 sm:mb-6'>
               Connect
             </div>
-            <div className='grid grid-cols-5 flex-wrap gap-x-2 gap-y-4'>
+            <div className='grid grid-cols-3 md:grid-cols-5 flex-wrap gap-x-2 gap-y-4'>
               <a
                 href='https://www.facebook.com/djchrisginthemix'
                 className='djcg-icon block hover:text-blue-ice transition duration-500 ease-in-out'

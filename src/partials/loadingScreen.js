@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react'
-import djcgLogo from '../assets/images/djcg-logo.png';
+import djcgLogo from '../assets/images/djcg-logo.png'
 import '../assets/css/tct-loading-screen.css'
 import loading3 from '../assets/images/loading/loading3.jpg'
 import loading4 from '../assets/images/loading/loading4.jpg'
@@ -14,10 +14,22 @@ import loading12 from '../assets/images/loading/loading12.jpg'
 import loading1 from '../assets/images/loading/loading1.jpg'
 import loading2 from '../assets/images/loading/loading2.jpg'
 
-
 const LoadingScreen = () => {
   const slideUrls = useMemo(
-    () => [loading3, loading4, loading5, loading6, loading7, loading8, loading9, loading10, loading11, loading12, loading1, loading2],
+    () => [
+      loading3,
+      loading4,
+      loading5,
+      loading6,
+      loading7,
+      loading8,
+      loading9,
+      loading10,
+      loading11,
+      loading12,
+      loading1,
+      loading2
+    ],
     []
   )
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -77,7 +89,7 @@ const LoadingScreen = () => {
                 key={index}
                 src={url}
                 alt=''
-                className={`bg-animated-image ${
+                className={`bg-animated-image h-full ${
                   currentImageIndex === index ? 'fade-in' : ''
                 }`}
               />
@@ -90,8 +102,13 @@ const LoadingScreen = () => {
         </div>
       )}
       <div className='w-full h-full flex justify-center items-center z-10'>
-      <img src={djcgLogo} alt="dj Chris G" width={362} height={154} className="w-72 drop-shadow-custom" />
-
+        <img
+          src={djcgLogo}
+          alt='dj Chris G'
+          width={362}
+          height={154}
+          className='w-72 drop-shadow-custom'
+        />
       </div>
     </div>
   )
