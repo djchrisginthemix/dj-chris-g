@@ -197,7 +197,7 @@ const MusicGrid = ({ onSubmit }) => {
             className='col-span-6 sm:col-span-2 md:col-span-1 xs:flex items-end justify-end'
           >
             <input
-              value='Request a Quote'
+              value="Let's get started!"
               type='submit'
               className='bg-blue-ice hover:bg-pink-mid text-white text-base md:text-lg font-bold rounded-full transition duration-500 ease-in-out px-10 md:px-14 py-4 shadow-sm'
             />
