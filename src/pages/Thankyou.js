@@ -22,7 +22,7 @@ const Thankyou = () => {
         title="Thank you for your message!"
         description="Seasoned maestro of dance, electronic, hip-hop, and underground house music, renowned for mesmerizing sets and creating unforgettable atmospheres"
         image="../assets/images/djcg-logo.png"
-        url="https://thecaffeineteam.org/thank-you"
+        url="https://djchrisginthemix.com/thank-you"
       />
 
       <div className="djcg-thank-you-content max-w-7xl mx-auto px-6 py-20">
