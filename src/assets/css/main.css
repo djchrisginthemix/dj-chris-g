@@ -1409,6 +1409,10 @@ textarea[name="message"]:invalid {
     height: 100vh;
   }
 
+  .md\:min-h-0 {
+    min-height: 0px;
+  }
+
   .md\:w-48 {
     width: 12rem;
   }

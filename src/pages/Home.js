@@ -40,7 +40,7 @@ function HomePage () {
   const contactImage = isMobile ? contactMobileImage : contactDesktopImage;
 
   return (
-    <div id='home-page' className='bg-black-asphalt'>
+    <div id='home-page' className='bg-black-solid'>
       <Header
         title='Home'
         description='Seasoned maestro of dance, electronic, hip-hop, and underground house music, renowned for mesmerizing sets and creating unforgettable atmospheres'
@@ -111,7 +111,7 @@ function HomePage () {
       </Parallax>
       <div id="contact-parallax">
       <Parallax bgImage={contactImage} strength={-500}>
-        <div className='bg-black-solid shadow-md min-h-160vh md:min-h-0 h-full md:h-screen -z-10'>
+        <div className='shadow-md min-h-160vh md:min-h-0 h-full md:h-screen relative'>
           <div
             id='contact-container'
             className='absolute w-full z-10'
