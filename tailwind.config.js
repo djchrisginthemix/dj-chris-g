@@ -97,7 +97,7 @@ module.exports = {
         '24rem': '24rem',
         '32rem': '32rem',
         '160vh': '160vh',
-        '200vh': '200vh'
+        '180vh': '180vh'
       },
       borderRadius: {
         xl: '1rem',

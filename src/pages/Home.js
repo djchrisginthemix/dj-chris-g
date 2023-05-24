@@ -99,7 +99,7 @@ function HomePage () {
       </Parallax>
 
       <Parallax bgImage={testimonialsImage} blur={{ min: 10, max: -10 }}>
-        <div className='min-h-200vh md:min-h-0 h-full md:h-3/4 shadow-inner'>
+        <div className='min-h-180vh md:min-h-0 h-full md:h-3/4 shadow-inner'>
           <div
             id='testimonials-container'
             className='absolute w-full max-w-7xl mx-auto'

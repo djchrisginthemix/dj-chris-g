@@ -29,7 +29,7 @@ function ScrollToTopButton() {
     <>
       {isVisible && (
         <button
-          className="fixed bottom-5 right-5 transition duration-500 ease-in-out bg-blue-ice hover:bg-transparent text-white hover:text-white p-3 rounded-full shadow-md hover:shadow-none"
+          className="fixed z-100 bottom-5 right-5 transition duration-500 ease-in-out bg-blue-ice hover:bg-transparent text-white hover:text-white p-3 rounded-full shadow-md hover:shadow-none"
           onClick={handleScrollToTop}
         >
           <GiMusicalNotes className="text-5xl" />
