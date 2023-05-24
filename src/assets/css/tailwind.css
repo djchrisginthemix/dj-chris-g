@@ -51,3 +51,6 @@ textarea[name="message"]:invalid {
   height: auto!important;
   min-height: 100vh;
 }
+#contact-parallax .react-parallax-bgimage {
+  z-index: 1;
+}

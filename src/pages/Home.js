@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import { Parallax } from 'react-parallax'
 import Contact from '../components/Contact'
 import LinktreeSubscribe from '../components/LinktreeSubscribe'
@@ -6,7 +6,8 @@ import Header from '../partials/Header'
 import Testimonials from '../components/Testimonials'
 import FullSlideshow from '../partials/FullSlideshow'
 import testimonialsBG from '../assets/images/testimonials-bg.jpg'
-import contactBG from '../assets/images/contact-bg.jpg'
+import contactBGdesktop from '../assets/images/contact-bg.jpg'
+import contactBGmobile from '../assets/images/contact-bg-mobile.jpg'
 import loading2 from '../assets/images/loading/loading2.jpg'
 
 function HomePage () {
@@ -16,9 +17,27 @@ function HomePage () {
     transform: 'translate(-50%,-50%)'
   }
 
-  const image1 = testimonialsBG;
-  const image2 = contactBG;
-  const image3 = loading2;
+  const testimonialsImage = testimonialsBG;
+  const contactDesktopImage = contactBGdesktop;
+  const contactMobileImage = contactBGmobile;
+  const linktreeImage = loading2;
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint to match your mobile size
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const contactImage = isMobile ? contactMobileImage : contactDesktopImage;
 
   return (
     <div id='home-page' className='bg-black-asphalt'>
@@ -79,8 +98,8 @@ function HomePage () {
         </div>
       </Parallax>
 
-      <Parallax bgImage={image1} blur={{ min: 10, max: -10 }}>
-        <div className='min-h-200vh h-full md:h-3/4 shadow-inner'>
+      <Parallax bgImage={testimonialsImage} blur={{ min: 10, max: -10 }}>
+        <div className='min-h-200vh md:min-h-0 h-full md:h-3/4 shadow-inner'>
           <div
             id='testimonials-container'
             className='absolute w-full max-w-7xl mx-auto'
@@ -90,19 +109,21 @@ function HomePage () {
           </div>
         </div>
       </Parallax>
-      <Parallax bgImage={image2} strength={-500}>
-        <div className='bg-black-solid shadow-md min-h-150vh h-full md:h-screen'>
+      <div id="contact-parallax">
+      <Parallax bgImage={contactImage} strength={-500}>
+        <div className='bg-black-solid shadow-md min-h-160vh md:min-h-0 h-full md:h-screen -z-10'>
           <div
             id='contact-container'
-            className='absolute w-full'
+            className='absolute w-full z-10'
             style={insideStyles}
           >
             <Contact />
           </div>
         </div>
       </Parallax>
+      </div>
       <Parallax
-        bgImage={image3}
+        bgImage={linktreeImage}
         strength={200}
         renderLayer={percentage => (
           <div className='h-1/2 shadow-inner'>
