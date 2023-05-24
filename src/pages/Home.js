@@ -45,7 +45,7 @@ function HomePage () {
         title='Home'
         description='Seasoned maestro of dance, electronic, hip-hop, and underground house music, renowned for mesmerizing sets and creating unforgettable atmospheres'
         image='../assets/images/djcg-logo.png'
-        url='https://djchrisginthemix.com/'
+        url='https://chrisginthemix.com/'
       />
       <Parallax
         strength={100}

@@ -8,7 +8,7 @@ const SEO = ({ title, description, image, url }) => {
 
   const pageTitle = title ? `${title} | ${siteName}` : siteName;
   const pageDescription = description || siteDescription;
-  const pageUrl = url || "https://djchrisginthemix.com";
+  const pageUrl = url || "https://chrisginthemix.com";
   const pageImage = image ? image : defaultImage;
 
   return (
