@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 const SEO = ({ title, description, image, url }) => {
   const siteName = "dj Chris G";
-  const siteDescription = "We love websites and everything related!";
+  const siteDescription = "Seasoned maestro of dance, electronic, hip-hop, and underground house music, renowned for mesmerizing sets and creating unforgettable atmospheres";
   const defaultImage = "/images/default.jpg";
 
   const pageTitle = title ? `${title} | ${siteName}` : siteName;

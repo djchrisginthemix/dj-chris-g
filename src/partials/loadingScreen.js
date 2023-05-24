@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import djcgLogo from '../assets/images/djcg-logo.png'
-import '../assets/css/tct-loading-screen.css'
+import '../assets/css/djcg-loading-screen.css'
 import loading3 from '../assets/images/loading/loading3.jpg'
 import loading4 from '../assets/images/loading/loading4.jpg'
 import loading5 from '../assets/images/loading/loading5.jpg'
@@ -76,7 +76,7 @@ const LoadingScreen = () => {
   return (
     <div
       id='djcg-loading-screen'
-      className='bg-beige-light w-full h-screen flex items-start justify-center overflow-hidden'
+      className='bg-black-solid w-full h-screen flex items-start justify-center overflow-hidden'
     >
       {isImagesLoaded && (
         <div className='motion-bg'>

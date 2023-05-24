@@ -105,8 +105,6 @@ const FormComponent = ({
     message: '',
     vibes: vibesStringRef ? vibesStringRef.split(', ') : [],
   };
-console.log(initialValues)
-
 
   const validationSchema = Yup.object().shape({
     name: Yup.string()
