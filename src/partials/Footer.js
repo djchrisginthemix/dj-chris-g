@@ -106,7 +106,7 @@ const Footer = () => {
                 860-899-7867
               </a>
               <a
-                href='mailto:djchrisgmgmt@gmail.com'
+                href='mailto:dj@chrisginthemix.com'
                 className='hover:underline hover:text-blue-ice text-lg transition duration-500 ease-in-out'
               >
                 <span className="break-all">dj@chrisginthemix.com</span>
