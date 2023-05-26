@@ -162,7 +162,7 @@ const FormComponent = ({
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        'form-name': 'dj Chris G Contact',
+        'form-name': 'dj-chris-g-contact',
         ...values
       })
     })
@@ -201,7 +201,7 @@ const FormComponent = ({
       >
         {({ resetForm, setFieldValue }) => (
           <Form
-            name='dj Chris G Contact'
+            name='dj-chris-g-contact'
             netlify-honeypot='bot-field'
             data-netlify={true}
           >
@@ -210,7 +210,7 @@ const FormComponent = ({
               type='hidden'
               name='form-name'
               className='hidden'
-              value='dj Chris G Contact'
+              value='dj-chris-g-contact'
             />
             <input type='hidden' name='bot-field' className='hidden' />
 
