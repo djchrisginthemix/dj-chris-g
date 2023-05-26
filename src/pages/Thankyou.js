@@ -21,7 +21,7 @@ const Thankyou = () => {
       <Header
         title="Thank you for your message!"
         description="Seasoned maestro of dance, electronic, hip-hop, and underground house music, renowned for mesmerizing sets and creating unforgettable atmospheres"
-        image="../assets/images/djcg-logo.png"
+        image="../assets/images/djcg-logo.svg"
         url="https://chrisginthemix.com/thank-you"
       />
 

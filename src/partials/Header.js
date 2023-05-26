@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import djcgLogo from '../assets/images/djcg-logo.png';
+import djcgLogo from '../assets/images/djcg-logo.svg';
 import { Zoom } from "react-awesome-reveal";
 import SEO from '../components/SEO';
 import Navbar from '../partials/Navbar';

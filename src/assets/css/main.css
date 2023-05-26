@@ -520,9 +520,6 @@ video {
 .order-3 {
   order: 3;
 }
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
 .col-span-6 {
   grid-column: span 6 / span 6;
 }
@@ -622,8 +619,8 @@ video {
 .min-h-160vh {
   min-height: 160vh;
 }
-.min-h-200vh {
-  min-height: 200vh;
+.min-h-180vh {
+  min-height: 180vh;
 }
 .w-11\/12 {
   width: 91.666667%;
@@ -732,6 +729,12 @@ video {
 }
 .overflow-hidden {
   overflow: hidden;
+}
+.break-words {
+  overflow-wrap: break-word;
+}
+.break-all {
+  word-break: break-all;
 }
 .rounded-full {
   border-radius: 9999px;
@@ -879,6 +882,9 @@ video {
 }
 .text-center {
   text-align: center;
+}
+.font-headline {
+  font-family: Staatliches, sans-serif;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -1257,8 +1263,8 @@ textarea[name="message"]:invalid {
     margin-top: 5rem;
   }
 
-  .sm\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:items-end {
@@ -1345,6 +1351,10 @@ textarea[name="message"]:invalid {
     grid-column: span 1 / span 1;
   }
 
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .md\:col-span-5 {
     grid-column: span 5 / span 5;
   }
@@ -1426,8 +1436,8 @@ textarea[name="message"]:invalid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1551,6 +1561,10 @@ textarea[name="message"]:invalid {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:gap-20 {

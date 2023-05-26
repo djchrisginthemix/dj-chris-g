@@ -10,12 +10,12 @@ const Footer = () => {
       >
         <div
           id='djcg-footer-layout'
-          className='w-full max-w-8xl grid grid-cols-1 sm:grid-cols-4 mx-auto px-6 justify-around gap-6 sm:gap-20 md:gap-24'
+          className='w-full max-w-8xl grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 mx-auto px-6 justify-around gap-6 sm:gap-20 md:gap-24'
         >
           {/* About Us Section */}
           <div
             id='djcg-footer-about-us'
-            className='flex flex-col w-full col-span-2 order-1'
+            className='flex flex-col w-full md:col-span-2 order-1'
           >
             <div className='text-orange-mid text-left text-lg sm:text-xl uppercase font-bold mb-4 sm:mb-6'>
               About
@@ -37,7 +37,7 @@ const Footer = () => {
             <div className='text-orange-mid text-left text-lg sm:text-xl uppercase font-bold mb-4 sm:mb-6'>
               Connect
             </div>
-            <div className='grid grid-cols-3 md:grid-cols-5 flex-wrap gap-x-2 gap-y-4'>
+            <div className='grid grid-cols-3 lg:grid-cols-5 flex-wrap gap-x-2 gap-y-4'>
               <a
                 href='https://www.facebook.com/djchrisginthemix'
                 className='djcg-icon block hover:text-blue-ice transition duration-500 ease-in-out'
@@ -109,7 +109,7 @@ const Footer = () => {
                 href='mailto:djchrisgmgmt@gmail.com'
                 className='hover:underline hover:text-blue-ice text-lg transition duration-500 ease-in-out'
               >
-                djchrisgmgmt@gmail.com
+                <span className="break-all">dj@chrisginthemix.com</span>
               </a>
             </div>
           </div>

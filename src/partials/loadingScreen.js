@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react'
-import djcgLogo from '../assets/images/djcg-logo.png'
+import djcgLogo from '../assets/images/djcg-logo.svg'
 import '../assets/css/djcg-loading-screen.css'
 import loading3 from '../assets/images/loading/loading3.jpg'
 import loading4 from '../assets/images/loading/loading4.jpg'

@@ -44,7 +44,7 @@ function HomePage () {
       <Header
         title='Home'
         description='Seasoned maestro of dance, electronic, hip-hop, and underground house music, renowned for mesmerizing sets and creating unforgettable atmospheres'
-        image='../assets/images/djcg-logo.png'
+        image='../assets/images/djcg-logo.svg'
         url='https://chrisginthemix.com/'
       />
       <Parallax
@@ -80,13 +80,13 @@ function HomePage () {
                 title='#inthemix with DJ Chris G'
                 target='_blank'
                 rel="noreferrer"
-                className='text-pink-mid hover:text-blue-ice transition duration-500 ease-in-out'
+                className='text-pink-mid hover:text-blue-ice break-words transition duration-500 ease-in-out'
                 href='https://z-p42.www.instagram.com/explore/tags/inthemix/'
               >
                 <em className='font-light'>#inthemix</em>
               </a>
             </h1>
-            <div class='flex flex-col md:flex-row justify-between gap-8 md:gap-16 md:ml-20 mt-14 md:mt-0'>
+            <div className='flex flex-col md:flex-row justify-between gap-8 md:gap-16 md:ml-20 mt-14 md:mt-0'>
               <p className='text-base md:text-2xl'>
                 <em>Resident DJ @ Mezzo Grille Fridays</em>
               </p>
