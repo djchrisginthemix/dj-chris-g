@@ -8,7 +8,7 @@ const Requests = () => {
       <Header
         title='Make Requests'
         description='Seasoned maestro of dance, electronic, hip-hop, and underground house music, renowned for mesmerizing sets and creating unforgettable atmospheres'
-        image='../assets/images/djcg-logo.svg'
+        image='../assets/images/djcg-logo-simple.svg'
         url='https://chrisginthemix.com/requests'
       />
       <div className='max-w-7xl mx-auto px-6 sm:py-14 md:py-16 lg:py-20'>

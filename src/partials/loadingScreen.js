@@ -107,7 +107,8 @@ const LoadingScreen = () => {
           alt='dj Chris G'
           width={362}
           height={154}
-          className='w-72 drop-shadow-custom'
+          className='w-72 heart-beat-animation drop-shadow-custom'
+          style={{ animateDelay: 0}}
         />
       </div>
     </div>

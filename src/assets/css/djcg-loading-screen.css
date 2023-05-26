@@ -22,3 +22,12 @@
 .fade-in, .bg-animated-image {
   transition: all .1s ease-in;
 }
+.heart-beat-animation {
+  animation: beat .25s infinite alternate;
+  transform-origin: center;
+}
+
+/* Heart beat animation */
+@keyframes beat{
+	to { transform: scale(1.2); }
+}

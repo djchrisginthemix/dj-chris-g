@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
+import 'animate.css'
 import djcgLogo from '../assets/images/djcg-logo.svg';
+import djcgLogoSimple from '../assets/images/djcg-logo-simple.svg';
 import { Zoom } from "react-awesome-reveal";
 import SEO from '../components/SEO';
 import Navbar from '../partials/Navbar';
@@ -34,8 +36,9 @@ const Header = ({ title, description, image, url }) => {
           <div className="flex flex-col gap-4 md:justify-between md:items-center">
             <div className="flex justify-between items-center">
               <div className="flex items-center">
-                <a className="hover:opacity-80 duration-500 transition-all ease-in-out" href="/">
-                 <img src={djcgLogo} alt="dj Chris G" width={362} height={154} className="w-52 md:w-48 pt-4 md:pt-0 drop-shadow-custom"/>
+                <a className="animate__animated animate__swing hover:opacity-80 duration-500 transition-all ease-in-out" href="/">
+                 <img src={djcgLogo} alt="dj Chris G" title="dj Chris G" width={362} height={154} className="hidden xs:flex w-72 pt-4 md:pt-0 drop-shadow-custom"/>
+                 <img src={djcgLogoSimple} alt="dj Chris G" title="dj Chris G" width={155} height={168} className="flex xs:hidden w-24 pt-4 md:pt-0 drop-shadow-custom"/>
                 </a>
               </div>
 

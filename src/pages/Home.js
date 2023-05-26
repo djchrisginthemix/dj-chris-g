@@ -6,8 +6,9 @@ import Header from '../partials/Header'
 import Testimonials from '../components/Testimonials'
 import FullSlideshow from '../partials/FullSlideshow'
 import testimonialsBG from '../assets/images/testimonials-bg.jpg'
-import contactBGdesktop from '../assets/images/contact-bg.jpg'
-import contactBGmobile from '../assets/images/contact-bg-mobile.jpg'
+import contactFG from '../assets/images/contact-fg.webp'
+import contactBGdesktop from '../assets/images/contact-bg.webp'
+import contactBGmobile from '../assets/images/contact-bg-mobile.webp'
 import loading2 from '../assets/images/loading/loading2.jpg'
 
 function HomePage () {
@@ -44,7 +45,7 @@ function HomePage () {
       <Header
         title='Home'
         description='Seasoned maestro of dance, electronic, hip-hop, and underground house music, renowned for mesmerizing sets and creating unforgettable atmospheres'
-        image='../assets/images/djcg-logo.svg'
+        image='../assets/images/djcg-logo-simple.svg'
         url='https://chrisginthemix.com/'
       />
       <Parallax
@@ -114,11 +115,12 @@ function HomePage () {
         <div className='shadow-md min-h-160vh md:min-h-0 h-full md:h-screen relative'>
           <div
             id='contact-container'
-            className='absolute w-full z-10'
+            className='absolute w-full z-20'
             style={insideStyles}
           >
             <Contact />
           </div>
+          <img src={contactFG} alt="dj Chris G" title="dj Chris G"  className="absolute z-10 bottom-0 right-10 w-full max-w-80 md:max-w-96 drop-shadow-custom"/>
         </div>
       </Parallax>
       </div>

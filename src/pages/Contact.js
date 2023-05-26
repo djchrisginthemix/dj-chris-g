@@ -9,7 +9,7 @@ const ContactUs = () => {
       <Header
         title="Contact Us"
         description="Seasoned maestro of dance, electronic, hip-hop, and underground house music, renowned for mesmerizing sets and creating unforgettable atmospheres"
-        image="../assets/images/djcg-logo.svg"
+        image="../assets/images/djcg-logo-simple.svg"
         url="https://chrisginthemix.com/contact"
       />
       <div className="max-w-7xl mx-auto px-6 py-20">
