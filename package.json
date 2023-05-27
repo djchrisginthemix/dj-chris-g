@@ -16,7 +16,7 @@
     "autoprefixer": "^10.4.14",
     "axios": "^1.4.0",
     "formik": "^2.2.9",
-    "gatsby": "^5.9.0",
+    "gatsby": "^5.10.0",
     "gsap": "^3.11.5",
     "netlify-plugin-cloudinary": "^1.2.0",
     "postcss-cli": "^10.1.0",
