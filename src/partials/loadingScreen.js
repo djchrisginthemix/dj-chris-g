@@ -13,22 +13,35 @@ import loading11 from '../assets/images/loading/loading11.jpg'
 import loading12 from '../assets/images/loading/loading12.jpg'
 import loading1 from '../assets/images/loading/loading1.jpg'
 import loading2 from '../assets/images/loading/loading2.jpg'
+import flashLoading from '../assets/images/loading/flash-loading.webp'
 
 const LoadingScreen = () => {
   const slideUrls = useMemo(
     () => [
       loading3,
+      flashLoading,
       loading4,
+      flashLoading,
       loading5,
+      flashLoading,
       loading6,
+      flashLoading,
       loading7,
+      flashLoading,
       loading8,
+      flashLoading,
       loading9,
+      flashLoading,
       loading10,
+      flashLoading,
       loading11,
+      flashLoading,
       loading12,
+      flashLoading,
       loading1,
-      loading2
+      flashLoading,
+      loading2,
+      flashLoading,
     ],
     []
   )
