@@ -85,7 +85,7 @@ const Events = () => {
       <div className="djcg-events-content max-w-7xl mx-auto px-6 py-20">
         <div className="flex flex-col items-center">
           <h2 className="djcg-header-2 text-center mt-8 mb-10 sm:mb-12">
-            Build With dj Chris G
+          If you want to be formal, but also here to party!
           </h2>
           <Reveal {...revealSettings}>
             <div className="events-intro text-base sm:text-lg max-w-5xl mx-auto text-center text-gray-500 mb-10 sm:mb-16 md:mb-20 lg:mb-24">
