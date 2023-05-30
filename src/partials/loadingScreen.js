@@ -78,7 +78,7 @@ const LoadingScreen = () => {
     if (isImagesLoaded) {
       const interval = setInterval(() => {
         setCurrentImageIndex(prevIndex => (prevIndex + 1) % slideUrls.length)
-      }, 200)
+      }, 340)
 
       return () => {
         clearInterval(interval) // Clean up the interval when the component unmounts
