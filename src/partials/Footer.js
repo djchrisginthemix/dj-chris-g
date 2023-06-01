@@ -98,7 +98,7 @@ const Footer = () => {
               Contact
             </div>
             <div className='flex flex-col'>
-              <h4 className='text-base font-bold mb-2'>dj Chris G</h4>
+              <h4 className='text-base font-bold mb-2'>DJ Chris G</h4>
               <a
                 href='tel:860-899-7867'
                 className='mr-4 hover:underline hover:text-blue-ice text-lg transition duration-500 ease-in-out'
