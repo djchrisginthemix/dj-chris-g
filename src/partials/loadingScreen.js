@@ -1,34 +1,47 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import djcgLogo from '../assets/images/djcg-logo.svg'
 import '../assets/css/djcg-loading-screen.css'
-import loading3 from '../assets/images/loading/loading3.jpg'
-import loading4 from '../assets/images/loading/loading4.jpg'
-import loading5 from '../assets/images/loading/loading5.jpg'
-import loading6 from '../assets/images/loading/loading6.jpg'
-import loading7 from '../assets/images/loading/loading7.jpg'
-import loading8 from '../assets/images/loading/loading8.jpg'
-import loading9 from '../assets/images/loading/loading9.jpg'
-import loading10 from '../assets/images/loading/loading10.jpg'
-import loading11 from '../assets/images/loading/loading11.jpg'
-import loading12 from '../assets/images/loading/loading12.jpg'
-import loading1 from '../assets/images/loading/loading1.jpg'
-import loading2 from '../assets/images/loading/loading2.jpg'
+import loading3 from '../assets/images/loading/loading3.webp'
+import loading4 from '../assets/images/loading/loading4.webp'
+import loading5 from '../assets/images/loading/loading5.webp'
+import loading6 from '../assets/images/loading/loading6.webp'
+import loading7 from '../assets/images/loading/loading7.webp'
+import loading8 from '../assets/images/loading/loading8.webp'
+// import loading9 from '../assets/images/loading/loading9.webp'
+// import loading10 from '../assets/images/loading/loading10.webp'
+// import loading11 from '../assets/images/loading/loading11.webp'
+// import loading12 from '../assets/images/loading/loading12.webp'
+// import loading1 from '../assets/images/loading/loading1.webp'
+// import loading2 from '../assets/images/loading/loading2.webp'
+import flashLoading from '../assets/images/loading/flash-loading.webp'
 
 const LoadingScreen = () => {
   const slideUrls = useMemo(
     () => [
       loading3,
+      flashLoading,
       loading4,
+      flashLoading,
       loading5,
+      flashLoading,
       loading6,
+      flashLoading,
       loading7,
+      flashLoading,
       loading8,
-      loading9,
-      loading10,
-      loading11,
-      loading12,
-      loading1,
-      loading2
+      flashLoading,
+    //   loading9,
+    //   flashLoading,
+    //   loading10,
+    //   flashLoading,
+    //   loading11,
+    //   flashLoading,
+    //   loading12,
+    //   flashLoading,
+    //   loading1,
+    //   flashLoading,
+    //   loading2,
+    //   flashLoading,
     ],
     []
   )
@@ -65,7 +78,7 @@ const LoadingScreen = () => {
     if (isImagesLoaded) {
       const interval = setInterval(() => {
         setCurrentImageIndex(prevIndex => (prevIndex + 1) % slideUrls.length)
-      }, 200)
+      }, 300)
 
       return () => {
         clearInterval(interval) // Clean up the interval when the component unmounts
@@ -88,8 +101,10 @@ const LoadingScreen = () => {
               <img
                 key={index}
                 src={url}
-                alt=''
-                className={`bg-animated-image h-full ${
+                alt='Loading dj Chris G'
+                width={1200}
+                height={800}
+                className={`bg-animated-image w-full h-full ${
                   currentImageIndex === index ? 'fade-in' : ''
                 }`}
               />
