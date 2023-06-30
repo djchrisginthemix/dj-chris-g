@@ -9,7 +9,7 @@ import testimonialsBG from '../assets/images/testimonials-bg.jpg'
 import contactFG from '../assets/images/contact-fg.webp'
 import contactBGdesktop from '../assets/images/contact-bg.webp'
 import contactBGmobile from '../assets/images/contact-bg-mobile.webp'
-import loading2 from '../assets/images/loading/loading2.jpg'
+import loading2 from '../assets/images/loading/loading2.webp'
 
 function HomePage () {
   const insideStyles = {
