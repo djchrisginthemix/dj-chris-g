@@ -6,7 +6,7 @@ const SectionHeading = ({ text, color="yellow" }) => {
     from: "bottom",
     distance: "20px",
     easing: "cubic-bezier(0.5, 0, 0, 1)",
-    delay: 100,
+    delay: 50,
   };
   const colorClasses = {
     blue: "bg-blue-ice",
