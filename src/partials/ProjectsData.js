@@ -1,24 +1,18 @@
+import flyer_06_30 from '../assets/images/Flyers/brookfield-06-30-2023.webp';
+import flyer_07_08 from '../assets/images/Flyers/brookfield-07-08-2023.webp';
+
 
 export const projects = [
   {
     id: 1,
-    image: 'https://via.placeholder.com/800x600',
-    title: 'Title 1',
-    description: 'Event 1',
-    video: '',
+    image: flyer_06_30,
+    title: "DJ Chris G @ O'Connor's Public House: Friday, June 30, 2023. 10pm to close.",
+    description: '317 Federal Rd, Brookfield, CT 06804',
   },
   {
     id: 2,
-    image: 'https://via.placeholder.com/800x600',
-    title: 'Title 2',
-    description: 'Event 2',
-    video: '',
-  },
-  {
-    id: 3,
-    image: 'https://via.placeholder.com/800x600',
-    title: 'Title 3',
-    description: 'Event 3',
-    video: '',
+    image: flyer_07_08,
+    title: "DJ Chris G @ O'Connor's Public House: Friday, July 08, 2023. 10pm to close.",
+    description: '317 Federal Rd, Brookfield, CT 06804',
   },
 ];
