@@ -15,7 +15,7 @@ const ContactUs = () => {
       <div className="max-w-7xl mx-auto px-6 py-20">
         <div className="flex flex-col items-center">
             <h2 className="djcg-header-2 mt-8 mb-10">
-              Contact dj Chris G
+              Contact DJ Chris G
             </h2>
         </div>
 

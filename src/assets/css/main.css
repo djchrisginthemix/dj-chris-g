@@ -736,6 +736,9 @@ video {
 .overflow-hidden {
   overflow: hidden;
 }
+.whitespace-nowrap {
+  white-space: nowrap;
+}
 .break-words {
   overflow-wrap: break-word;
 }
@@ -874,6 +877,9 @@ video {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
 .pl-4 {
   padding-left: 1rem;
 }
@@ -915,6 +921,10 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .text-xl {
   font-size: 1.25rem;
@@ -1285,8 +1295,8 @@ textarea[name="message"]:invalid {
     justify-content: flex-end;
   }
 
-  .sm\:gap-20 {
-    gap: 5rem;
+  .sm\:gap-14 {
+    gap: 3.5rem;
   }
 
   .sm\:gap-4 {
@@ -1333,6 +1343,11 @@ textarea[name="message"]:invalid {
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .sm\:text-base {
@@ -1402,6 +1417,14 @@ textarea[name="message"]:invalid {
     margin-top: 0px;
   }
 
+  .md\:mt-24 {
+    margin-top: 6rem;
+  }
+
+  .md\:mt-neg10 {
+    margin-top: -10rem;
+  }
+
   .md\:mt-neg5 {
     margin-top: -5rem;
   }
@@ -1466,16 +1489,16 @@ textarea[name="message"]:invalid {
     justify-content: space-between;
   }
 
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .md\:gap-12 {
     gap: 3rem;
   }
 
   .md\:gap-16 {
     gap: 4rem;
-  }
-
-  .md\:gap-24 {
-    gap: 6rem;
   }
 
   .md\:gap-6 {
@@ -1543,13 +1566,13 @@ textarea[name="message"]:invalid {
     padding-top: 0px;
   }
 
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .md\:text-5xl {
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 
@@ -1560,6 +1583,11 @@ textarea[name="message"]:invalid {
 
   .md\:text-lg {
     font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
@@ -1589,6 +1617,16 @@ textarea[name="message"]:invalid {
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 @media (min-width: 1280px) {

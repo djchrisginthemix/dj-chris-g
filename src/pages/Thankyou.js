@@ -31,7 +31,7 @@ const Thankyou = () => {
           <Reveal {...revealSettings}>
             <div className="thank-you-intro text-base sm:text-lg max-w-5xl mx-auto text-center text-gray-500 mb-10 sm:mb-16 md:mb-20 lg:mb-24">
               <p className="mb-5 md:mb-6">
-                Thank you for reaching out to dj Chris G. We have received your message and will get back to you as soon as possible.
+                Thank you for reaching out to DJ Chris G. We have received your message and will get back to you as soon as possible.
                 In the meantime, feel free to browse our website and get some ideas ready!
               </p>
               <p>Thank you again for choosing us and we look forward to serving you!</p>

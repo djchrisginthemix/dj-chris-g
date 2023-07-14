@@ -37,8 +37,8 @@ const Header = ({ title, description, image, url }) => {
             <div className="flex justify-between items-center">
               <div className="flex items-center">
                 <a className="animate__animated animate__swing hover:opacity-80 duration-500 transition-all ease-in-out" href="/">
-                 <img src={djcgLogo} alt="dj Chris G" title="dj Chris G" width={362} height={154} className="hidden xs:flex w-72 pt-4 md:pt-0 drop-shadow-custom"/>
-                 <img src={djcgLogoSimple} alt="dj Chris G" title="dj Chris G" width={155} height={168} className="flex xs:hidden w-24 pt-4 md:pt-0 drop-shadow-custom"/>
+                 <img src={djcgLogo} alt="DJ Chris G" title="DJ Chris G" width={362} height={154} className="hidden xs:flex w-72 pt-4 md:pt-0 drop-shadow-custom"/>
+                 <img src={djcgLogoSimple} alt="DJ Chris G" title="DJ Chris G" width={155} height={168} className="flex xs:hidden w-24 pt-4 md:pt-0 drop-shadow-custom"/>
                 </a>
               </div>
 

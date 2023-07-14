@@ -76,7 +76,7 @@ function HomePage () {
             style={insideStyles}
           >
             <h1 className='djcg-header-1 flex flex-col md:flex-row gap-8 md:gap-16 justify-center items-center'>
-              <div>Welcome to the sick, twisted mind of <span className="text-blue-ice">DJ Chris G</span></div>{' '}
+              <div>Welcome to the sick, twisted mind of <span className="text-blue-ice whitespace-nowrap">DJ Chris G</span></div>{' '}
               <a
                 title='#inthemix with DJ Chris G'
                 target='_blank'
@@ -84,15 +84,18 @@ function HomePage () {
                 className='text-pink-mid hover:text-blue-ice break-words transition duration-500 ease-in-out'
                 href='https://z-p42.www.instagram.com/explore/tags/inthemix/'
               >
-                <em className='font-light'>#inthemix</em>
+                <em className='font-light text-4xl sm:text-5xl md:text-6xl lg:text-7xl'>#inthemix</em>
               </a>
             </h1>
-            <div className='flex flex-col md:flex-row justify-between gap-8 md:gap-16 md:ml-20 mt-14 md:mt-0'>
-              <p className='text-base md:text-2xl'>
-                <em>Resident DJ @ Mezzo Grille Fridays</em>
+            <div className='flex flex-col md:flex-row justify-between gap-8 md:gap-16 md:ml-20 mt-14 md:mt-24 pb-10'>
+              <p className='text-base md:text-xl'>
+                <em>Mezzo Grille in Middletown, CT.</em>
               </p>
-              <p className='text-base md:text-2xl md:mt-neg5'>
-                <em>Special Featured DJ @ Shrine NightClub, Foxwoods Casino</em>
+              <p className='text-base md:text-xl md:mt-neg5'>
+                <em>O'Connors Public House in Brookfield, CT.</em>
+              </p>
+              <p className='text-base md:text-xl md:mt-neg10'>
+                <em>My Bar &amp; Grille in Milford, CT.</em>
               </p>
             </div>
           </div>
@@ -120,7 +123,7 @@ function HomePage () {
           >
             <Contact />
           </div>
-          <img src={contactFG} alt="dj Chris G" title="dj Chris G"  className="absolute z-10 bottom-0 right-10 w-full max-w-80 md:max-w-96 drop-shadow-custom"/>
+          <img src={contactFG} alt="DJ Chris G" title="DJ Chris G"  className="absolute z-10 bottom-0 right-10 w-full max-w-80 md:max-w-96 drop-shadow-custom"/>
         </div>
       </Parallax>
       </div>

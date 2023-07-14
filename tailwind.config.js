@@ -61,7 +61,8 @@ module.exports = {
         xxs: '.65rem'
       },
       margin: {
-        'neg5': '-5rem'
+        'neg5': '-5rem',
+        'neg10': '-10rem'
       },
       height: {
         '1/3': '33vh',

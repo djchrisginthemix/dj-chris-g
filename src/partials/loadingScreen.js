@@ -101,7 +101,7 @@ const LoadingScreen = () => {
               <img
                 key={index}
                 src={url}
-                alt='Loading dj Chris G'
+                alt='Loading DJ Chris G'
                 width={1200}
                 height={800}
                 className={`bg-animated-image w-full h-full ${
@@ -119,7 +119,7 @@ const LoadingScreen = () => {
       <div className='w-full h-full flex justify-center items-center z-10'>
         <img
           src={djcgLogo}
-          alt='dj Chris G'
+          alt='DJ Chris G'
           width={362}
           height={154}
           className='w-72 heart-beat-animation drop-shadow-custom'

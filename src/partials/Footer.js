@@ -10,7 +10,7 @@ const Footer = () => {
       >
         <div
           id='djcg-footer-layout'
-          className='w-full max-w-8xl grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 mx-auto px-6 justify-around gap-6 sm:gap-20 md:gap-24'
+          className='w-full max-w-8xl grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 mx-auto px-6 justify-around gap-6 sm:gap-14 md:gap-10 lg:gap-20'
         >
           {/* About Us Section */}
           <div
@@ -21,7 +21,7 @@ const Footer = () => {
               About
             </div>
             <p className='text-base md:pr-10'>
-              <strong>dj Chris G</strong> is a seasoned expert in dance,
+              <strong>DJ Chris G</strong> is a seasoned expert in dance,
               electronic, hip-hop, and underground house music, captivating
               crowds with his dynamic sets, seamless track blending, and
               infectious energy, while leaving a lasting impression through his
@@ -98,16 +98,16 @@ const Footer = () => {
               Contact
             </div>
             <div className='flex flex-col'>
-              <h4 className='text-base font-bold mb-2'>dj Chris G</h4>
+              <h4 className='text-base font-bold mb-2'>DJ Chris G</h4>
               <a
                 href='tel:860-899-7867'
-                className='mr-4 hover:underline hover:text-blue-ice text-lg transition duration-500 ease-in-out'
+                className='text-base lg:text-lg mr-4 hover:underline hover:text-blue-ice transition duration-500 ease-in-out'
               >
                 860-899-7867
               </a>
               <a
                 href='mailto:dj@chrisginthemix.com'
-                className='hover:underline hover:text-blue-ice text-lg transition duration-500 ease-in-out'
+                className='hover:underline hover:text-blue-ice text-base lg:text-lg transition duration-500 ease-in-out'
               >
                 <span className="break-all">dj@chrisginthemix.com</span>
               </a>
